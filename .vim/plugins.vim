@@ -373,6 +373,7 @@ let g:SuperTabClosePreviewOnPopupClose = 1
 " ---------------
 " YouCompleteMe
 " ---------------
+let g:ycm_disable_for_files_larger_than_kb = 500
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_complete_in_comments_and_strings = 1

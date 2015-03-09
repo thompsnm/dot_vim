@@ -284,10 +284,11 @@ let g:rbpt_colorpairs = [
 " ---------------
 " Ag.vim
 " ---------------
+let g:ag_highlight = 1
 nnoremap <silent> <leader>as :AgFromSearch<CR>
-nnoremap <leader>ag :Ag<space>
-vnoremap <leader>ag "xy :Ag "<c-r>x"
-nnoremap <leader>sag :Ag <c-r><c-w>
+nnoremap <leader>ag :Ag!<space>
+vnoremap <leader>ag "xy :Ag! "<c-r>x"
+nnoremap <leader>sag :Ag! <c-r><c-w>
 
 " ---------------
 " surround.vim

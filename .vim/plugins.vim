@@ -342,8 +342,7 @@ autocmd BufNewFile,BufRead *[Ss]pec.coffee let g:switch_custom_definitions =
 " ---------------
 " indenthtml
 " ---------------
-" Setup indenthtml to propertly indent html. Without this, formatting doesn't
-" work on html.
+" Setup indenthtml to propertly indent html. Without this, formatting doesn't work on html.
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
@@ -392,10 +391,19 @@ let g:UltiSnipsListSnippets="<leader><tab>"
 " ---------------
 " vim-signify
 " ---------------
+let g:signify_vcs_list = [ 'git' ]
+let g:signify_update_on_bufenter    = 0
+let g:signify_update_on_focusgained = 1
+
+" hunk jumping
 nmap <leader>gj <plug>(signify-next-hunk)
 nmap <leader>gk <plug>(signify-prev-hunk)
-" Makes switching buffers in large repos have no delay
-let g:signify_update_on_bufenter = 0
+
+" hunk text object
+omap ic <plug>(signify-motion-inner-pending)
+xmap ic <plug>(signify-motion-inner-visual)
+omap ac <plug>(signify-motion-outer-pending)
+xmap ac <plug>(signify-motion-outer-visual)
 
 " ---------------
 " vim-startify
@@ -458,6 +466,9 @@ let g:dash_map = {
     \ 'less' : 'css'
     \ }
 
+"--------------
+" tmuxline.vim
+"--------------
 let g:tmuxline_preset = {
     \ 'a'    : '❐ #S',
     \ 'b'    : '#H',

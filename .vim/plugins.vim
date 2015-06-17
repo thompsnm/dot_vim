@@ -431,11 +431,6 @@ nnoremap <leader>ss :%Subvert/
 " ---------------
 let g:togglecursor_leave='line'
 
-" ------
-" ColorV
-" ------
-let g:colorv_preview_ftype = 'css,html,javascript,scss,stylus,less'
-
 "---------
 " Clojure
 "---------

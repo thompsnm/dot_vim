@@ -40,5 +40,8 @@ if has("autocmd")
     autocmd Syntax * RainbowParenthesesLoadRound
     autocmd Syntax * RainbowParenthesesLoadSquare
     autocmd Syntax * RainbowParenthesesLoadBraces
+
+    " Disable Indent Guides for Clojure files
+    autocmd BufNewFile,BufEnter *.clj,*.cljs IndentGuidesDisable
   augroup end
 endif

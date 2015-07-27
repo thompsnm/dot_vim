@@ -250,16 +250,22 @@ let g:airline#extensions#eclim#enabled = 0
 let g:airline#extensions#hunks#enabled = 0
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline_mode_map = {
+      \ '__' : '-',
       \ 'n'  : 'N',
       \ 'i'  : 'I',
       \ 'R'  : 'R',
-      \ 'v'  : 'V',
-      \ 'V'  : 'VL',
       \ 'c'  : 'CMD',
+      \ 'v'  : 'V',
+      \ 'V'  : 'V',
       \ '' : 'VB',
+      \ 's'  : 'S',
+      \ 'S'  : 'S',
+      \ '' : 'S',
       \ }
+
 " Just show the file name
 let g:airline_section_c = '%t'
+let g:airline_section_z = airline#section#create(['%{ObsessionStatus(''$'', '''')}', 'windowswap', '%3p%% ', 'linenr', ':%3v '])
 
 " ---------------
 " jellybeans.vim colorscheme tweaks

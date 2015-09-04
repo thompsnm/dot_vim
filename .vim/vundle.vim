@@ -57,7 +57,6 @@ Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'tpope/vim-dispatch'
 " Automatic Helpers
 Plugin 'tpope/vim-obsession'
-Plugin 'vim-scripts/SyntaxComplete'
 Plugin 'MarcWeber/vim-addon-local-vimrc'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'

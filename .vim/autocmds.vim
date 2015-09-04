@@ -25,14 +25,6 @@ if has("autocmd")
     autocmd BufWritePre *.py,*.coffee,*.css,*.less,*.js,*.coffee,
           \*.rb,*.erb,*.groovy,*.java,*.php,*.ftl silent! :StripTrailingWhiteSpace
 
-    " Enable autocomplete based on syntax
-    if exists("+omnifunc")
-      autocmd Filetype *
-        \ if &omnifunc == "" || &omnifunc =~ "eclim#javascript" |
-        \   setlocal omnifunc=syntaxcomplete#Complete |
-        \ endif
-    endif
-
     autocmd BufRead,BufNewFile .jshintrc,.bowerrc set filetype=json
 
     " Enable Rainbow Parentheses

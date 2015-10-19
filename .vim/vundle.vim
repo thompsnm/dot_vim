@@ -96,7 +96,6 @@ Plugin 'indenthtml.vim'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'luishdez/vim-less'
 Plugin 'tpope/vim-cucumber'
-Plugin 'dansomething/ftl-vim-syntax'
 Plugin 'tfnico/vim-gradle'
 Plugin 'tmux-plugins/vim-tmux'
 " MatchIt

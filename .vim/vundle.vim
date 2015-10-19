@@ -94,7 +94,7 @@ Plugin 'othree/html5.vim'
 Plugin 'indenthtml.vim'
 "   Other Languages
 Plugin 'hail2u/vim-css3-syntax'
-Plugin 'groenewege/vim-less'
+Plugin 'luishdez/vim-less'
 Plugin 'tpope/vim-cucumber'
 Plugin 'dansomething/ftl-vim-syntax'
 Plugin 'tfnico/vim-gradle'

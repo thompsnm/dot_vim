@@ -98,6 +98,7 @@ Plugin 'luishdez/vim-less'
 Plugin 'tpope/vim-cucumber'
 Plugin 'tfnico/vim-gradle'
 Plugin 'tmux-plugins/vim-tmux'
+Plugin 'leafgarland/typescript-vim'
 " MatchIt
 Plugin 'matchit.zip'
 " Libraries

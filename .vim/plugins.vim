@@ -130,8 +130,18 @@ let g:tagbar_type_cucumber = {
       \]
     \}
 
+let g:tagbar_type_css = {
+    \ 'ctagstype' : 'css',
+    \ 'kinds'     : [
+        \ 'c:class',
+        \ 'i:id',
+        \ 'm:media',
+        \ 't:tag'
+    \ ]
+\ }
+
 let g:tagbar_type_less = {
-    \ 'ctagstype' : 'less',
+    \ 'ctagstype' : 'css',
     \ 'kinds'     : [
         \ 'c:class',
         \ 'i:id',

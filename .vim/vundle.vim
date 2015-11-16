@@ -36,6 +36,7 @@ Plugin 'mbbill/undotree'
 Plugin 'jszakmeister/vim-togglecursor'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'ryanss/vim-hackernews'
 " Commands
 Plugin 'dansomething/vim-eclim'
 Plugin 'scrooloose/nerdcommenter'

@@ -97,6 +97,7 @@ let g:tagbar_type_coffee = {
         \ 't:ng-scope-variable',
         \ 'c:classes',
         \ 'm:methods',
+        \ 'p:fields',
         \ 'f:functions:1:1',
         \ 'v:variables:1:0',
         \ 'o:object',

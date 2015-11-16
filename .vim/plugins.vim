@@ -116,6 +116,13 @@ let g:tagbar_type_groovy = {
     \ ]
 \ }
 
+let g:tagbar_type_html = {
+    \ 'ctagstype' : 'html',
+    \ 'kinds'     : [
+        \ 'o:ng-*'
+    \ ]
+\ }
+
 let g:tagbar_type_cucumber = {
     \ 'ctagstype': 'cucumber',
     \ 'kinds': [

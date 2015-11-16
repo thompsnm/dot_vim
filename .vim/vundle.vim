@@ -74,6 +74,7 @@ Plugin 'szw/vim-tags'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'samsonw/vim-task'
 Plugin 'rizzatti/dash.vim'
+Plugin 'tmux-plugins/vim-tmux-focus-events'
 " Language Additions
 "   Clojure
 Plugin 'tpope/vim-leiningen'

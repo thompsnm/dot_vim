@@ -53,7 +53,7 @@ Plugin 'AndrewRadev/switch.vim'
 Plugin 'tpope/vim-eunuch'
 Plugin 'mutewinter/UnconditionalPaste'
 Plugin 'HelpClose'
-Plugin 'dansomething/vim-visual-star-search'
+Plugin 'bronson/vim-visual-star-search'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'tpope/vim-dispatch'
 " Automatic Helpers

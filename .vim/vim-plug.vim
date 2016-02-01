@@ -21,7 +21,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-unimpaired'
 " UI Additions
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'majutsushi/tagbar' | Plug 'szw/vim-tags'
 Plug 'nanotech/jellybeans.vim'

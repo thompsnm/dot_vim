@@ -104,7 +104,7 @@ Plug 'tpope/vim-cucumber', { 'for': ['feature', 'story'] }
 Plug 'tfnico/vim-gradle', { 'for': 'gradle' }
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
-Plug 'samsonw/vim-task', { 'for': 'tasks' }
+Plug 'samsonw/vim-task', { 'for': 'task' }
 " Misc
 Plug 'ryanss/vim-hackernews', { 'on': 'HackerNews' }
 

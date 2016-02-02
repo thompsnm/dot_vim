@@ -2,13 +2,14 @@
 
 ## Installation
 
+### Automatic
 
 1. `bash <(curl -s https://raw.githubusercontent.com/dansomething/dot_vim/master/install)`
     * Note: This relies on [Homeshick](https://github.com/andsens/homeshick) for installation.
 2. Enjoy enhanced productivity, increased levitation, reduced
    watermelon-related accidents, and startling sex appeal.
 
-### Manual Install
+### Manual Steps
 1. `git clone http://github.com/dansomething/dot_vim.git ~/dot_vim`
 2. `ln -s ~/dot_vim/.vim ~/.vim`
 3. `ln -s ~/.vim/vimrc ~/.vimrc`
@@ -38,6 +39,9 @@ And many more. See [`mappings.vim`](.vim/mappings.vim) and
 [`plugins.vim`](.vim/plugins.vim) for more.
 
 ## Plugin Installation / Requirements
+
+Add/Edit installed plugins in [`vim-plug.vim`](.vim/vim-plug.vim).
+See [vim-plug](https://github.com/junegunn/vim-plug) to learn more about plugin configuration.
 
 Here's a list of plugins that require further installation or have
 dependencies.

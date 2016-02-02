@@ -163,7 +163,7 @@ nnoremap <silent> <leader>p :PasteWithPasteMode<CR>
 " Writes the current buffer if it's needed, unless we're the in QuickFix mode.
 " ---------------
 
-function WriteBufferIfNecessary()
+function! WriteBufferIfNecessary()
   if &modified && !&readonly
     :write
   endif
@@ -176,14 +176,14 @@ command! WriteBufferIfNecessary call WriteBufferIfNecessary()
 " Writes the current buffer if it's not readonly, unless we're the in QuickFix mode.
 " ---------------
 
-function WriteBufferIfAble()
+function! WriteBufferIfAble()
   if !&readonly
     :write
   endif
 endfunction
 command! WriteBufferIfAble call WriteBufferIfAble()
 
-function CRWriteIfNecessary()
+function! CRWriteIfNecessary()
   if &filetype == "qf"
     " Execute a normal enter when in Quickfix list.
     execute "normal! \<enter>"
@@ -244,7 +244,7 @@ nnoremap <silent>yl :call YankLineWithoutNewline()<CR>
 " ---------------
 " Run the current file as a Maven test
 " ---------------
-function MavenTest()
+function! MavenTest()
   !mvn test -Dtest=%:t:r -DfailIfNoTests=true
 endfunction
 command! MavenTest call MavenTest()
@@ -253,7 +253,7 @@ nnoremap <silent> <leader>mt :MavenTest<CR>
 " ---------------
 " Run the current file as a Gradle test
 " ---------------
-function GradleTest()
+function! GradleTest()
   !gw test -Dtest.single=%:t:r -i
 endfunction
 command! GradleTest call GradleTest()
@@ -290,7 +290,7 @@ nmap <silent> <leader>do :diffoff!<cr>
 " Move current window between tabs
 " http://vim.wikia.com/wiki/Move_current_window_between_tabs
 " ---------------
-function MoveToPrevTab()
+function! MoveToPrevTab()
   "there is only one window
   if tabpagenr('$') == 1 && winnr('$') == 1
     return
@@ -312,7 +312,7 @@ function MoveToPrevTab()
   exe "b".l:cur_buf
 endfunc
 
-function MoveToNextTab()
+function! MoveToNextTab()
   "there is only one window
   if tabpagenr('$') == 1 && winnr('$') == 1
     return

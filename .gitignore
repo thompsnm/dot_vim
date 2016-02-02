@@ -3,3 +3,4 @@ sessions
 .DS_Store
 extra.vim
 Session.vim
+.vim/autoload/

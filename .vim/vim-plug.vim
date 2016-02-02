@@ -19,7 +19,7 @@ Plug 'regedarek/ZoomWin', { 'on': 'ZoomWin' }
 " This fork is required due to remapping ; to :
 Plug 'christoomey/vim-space'
 Plug 'Lokaltog/vim-easymotion'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-unimpaired'
 " UI Additions
@@ -81,7 +81,7 @@ Plug 'matchit.zip'
 Plug 'tpope/vim-repeat'
 " Language Additions
 "   Clojure
-Plug 'tpope/vim-leiningen', { 'for': 'clojure' }
+Plug 'tpope/vim-salve', { 'for': 'clojure' }
 Plug 'tpope/vim-projectionist', { 'for': 'clojure' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'guns/vim-clojure-static', { 'for': 'clojure' }

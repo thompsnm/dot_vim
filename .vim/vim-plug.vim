@@ -73,7 +73,10 @@ if v:version > 703 || (v:version == 703 && has('patch584'))
   endfunction
   Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 endif
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+"    UltiSnips
+if v:version >= 704
+  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+endif
 Plug 'editorconfig/editorconfig-vim'
 Plug 'rizzatti/dash.vim', { 'on': 'Dash' }
 Plug 'tmux-plugins/vim-tmux-focus-events'

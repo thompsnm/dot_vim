@@ -107,7 +107,7 @@ Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'less', 'sass'] }
 Plug 'luishdez/vim-less', { 'for': 'less' }
 Plug 'tpope/vim-cucumber', { 'for': ['feature', 'story'] }
-Plug 'tfnico/vim-gradle', { 'for': 'gradle' }
+Plug 'tfnico/vim-gradle', { 'for': 'groovy' }
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'samsonw/vim-task', { 'for': 'task' }

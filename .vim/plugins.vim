@@ -107,6 +107,34 @@ let g:tagbar_type_coffee = {
     \ ]
 \ }
 
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
+
 let g:tagbar_type_groovy = {
     \ 'ctagstype' : 'groovy',
     \ 'kinds'     : [
@@ -464,6 +492,21 @@ nnoremap <leader>ss :%Subvert/
 " vim-togglecursor
 " ---------------
 let g:togglecursor_leave='line'
+
+"---------
+" vim-go
+"---------
+let g:syntastic_go_checkers = ['go', 'golint', 'govet']
+
+" use goimports for formatting
+let g:go_fmt_command = "goimports"
+
+" turn highlighting on
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 
 "---------
 " Clojure

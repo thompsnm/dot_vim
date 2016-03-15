@@ -68,7 +68,7 @@ if v:version > 703 || (v:version == 703 && has('patch584'))
     " - status: 'installed', 'updated', or 'unchanged'
     " - force:  set on PlugInstall! or PlugUpdate!
     if a:info.status == 'installed' || a:info.force
-      !./install.py
+      !./install.py --clang-completer --gocode-completer
     endif
   endfunction
   Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
@@ -103,6 +103,7 @@ Plug 'mustache/vim-mustache-handlebars', { 'for': ['html', 'hbs'] }
 Plug 'othree/html5.vim', { 'for': ['html', 'hbs'] }
 Plug 'indenthtml.vim', { 'for': ['html', 'hbs'] }
 "   Other Languages
+Plug 'fatih/vim-go', { 'for': ['go'] }
 Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'less', 'sass'] }
 Plug 'luishdez/vim-less', { 'for': 'less' }

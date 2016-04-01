@@ -15,51 +15,58 @@ call plug#begin('~/.vim/bundle')
 " ---------------
 
 " Navigation
-Plug 'regedarek/ZoomWin', { 'on': 'ZoomWin' }
-" This fork is required due to remapping ; to :
-Plug 'christoomey/vim-space'
-Plug 'Lokaltog/vim-easymotion'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'regedarek/ZoomWin', { 'on': 'ZoomWin' }
 Plug 'tpope/vim-unimpaired'
 " UI Additions
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
-Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
-Plug 'majutsushi/tagbar' | Plug 'szw/vim-tags'
-Plug 'nanotech/jellybeans.vim'
-Plug 'mhinz/vim-signify'
-Plug 'mhinz/vim-startify'
-Plug 'mbbill/undotree'
+Plug 'edkolev/tmuxline.vim'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'edkolev/tmuxline.vim'
+Plug 'majutsushi/tagbar' | Plug 'szw/vim-tags'
+Plug 'mbbill/undotree'
+Plug 'mhinz/vim-signify'
+Plug 'mhinz/vim-startify'
+Plug 'nanotech/jellybeans.vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
+Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 " Commands
-Plug 'dansomething/vim-eclim'
-Plug 'scrooloose/nerdcommenter'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
-Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
-Plug 'rking/ag.vim', { 'on': 'Ag' }
-Plug 'milkypostman/vim-togglelist'
 Plug 'AndrewRadev/sideways.vim'
-Plug 'tpope/vim-abolish'
-Plug 'scratch.vim'
-Plug 'mattn/emmet-vim'
+Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
-Plug 'tpope/vim-eunuch'
-Plug 'vim-scripts/UnconditionalPaste'
 Plug 'HelpClose'
 Plug 'bronson/vim-visual-star-search'
-Plug 'AndrewRadev/splitjoin.vim'
+Plug 'dansomething/vim-eclim'
+Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
+Plug 'mattn/emmet-vim'
+Plug 'Valloric/ListToggle'
+Plug 'rking/ag.vim', { 'on': 'Ag' }
+Plug 'scratch.vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'vim-scripts/UnconditionalPaste'
 " Automatic Helpers
-Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-obsession'
 Plug 'MarcWeber/vim-addon-local-vimrc'
 Plug 'Raimondi/delimitMate'
-Plug 'scrooloose/syntastic'
-Plug 'ervandew/supertab'
 Plug 'Valloric/MatchTagAlways'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'ervandew/supertab'
+Plug 'matchit.zip'
+Plug 'rizzatti/dash.vim', { 'on': 'Dash' }
+Plug 'scrooloose/syntastic'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-repeat'
+"    UltiSnips
+if v:version >= 704
+  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+endif
 "   YouCompleteMe
 if v:version > 703 || (v:version == 703 && has('patch584'))
   function! BuildYCM(info)
@@ -73,45 +80,36 @@ if v:version > 703 || (v:version == 703 && has('patch584'))
   endfunction
   Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 endif
-"    UltiSnips
-if v:version >= 704
-  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-endif
-Plug 'editorconfig/editorconfig-vim'
-Plug 'rizzatti/dash.vim', { 'on': 'Dash' }
-Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'matchit.zip'
-Plug 'tpope/vim-repeat'
 " Language Additions
 "   Clojure
-Plug 'tpope/vim-salve', { 'for': 'clojure' }
-Plug 'tpope/vim-projectionist', { 'for': 'clojure' }
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 Plug 'guns/vim-clojure-highlight', { 'for': 'clojure' }
-Plug 'guns/vim-slamhound', { 'for': 'clojure' }
+Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 Plug 'guns/vim-sexp', { 'for': 'clojure' }
+Plug 'guns/vim-slamhound', { 'for': 'clojure' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plug 'tpope/vim-projectionist', { 'for': 'clojure' }
+Plug 'tpope/vim-salve', { 'for': 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 "   JavaScript
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'coffee'] }
-Plug 'matthewsimo/angular-vim-snippets', { 'for': ['javascript', 'coffee'] }
 Plug 'elzr/vim-json', { 'for': 'json' }
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+Plug 'matthewsimo/angular-vim-snippets', { 'for': ['javascript', 'coffee'] }
+Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'coffee'] }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 "   HTML
+Plug 'indenthtml.vim', { 'for': ['html', 'hbs'] }
 Plug 'mustache/vim-mustache-handlebars', { 'for': ['html', 'hbs'] }
 Plug 'othree/html5.vim', { 'for': ['html', 'hbs'] }
-Plug 'indenthtml.vim', { 'for': ['html', 'hbs'] }
 "   Other Languages
-Plug 'fatih/vim-go', { 'for': ['go'] }
 Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass'] }
+Plug 'fatih/vim-go', { 'for': ['go'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'less', 'sass'] }
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'luishdez/vim-less', { 'for': 'less' }
-Plug 'tpope/vim-cucumber', { 'for': ['feature', 'story'] }
+Plug 'samsonw/vim-task', { 'for': 'task' }
 Plug 'tfnico/vim-gradle', { 'for': 'groovy' }
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
-Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
-Plug 'samsonw/vim-task', { 'for': 'task' }
+Plug 'tpope/vim-cucumber', { 'for': ['feature', 'story'] }
 " Misc
 Plug 'ryanss/vim-hackernews', { 'on': 'HackerNews' }
 

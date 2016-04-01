@@ -27,8 +27,6 @@ if has("autocmd")
 
     autocmd BufRead,BufNewFile .jshintrc,.bowerrc set filetype=json
 
-    autocmd BufEnter,BufNewFile *Spec.coffee :UltiSnipsAddFiletypes coffee-jasmine
-
     " Enable Rainbow Parentheses
     autocmd VimEnter * RainbowParenthesesToggle
     autocmd Syntax * RainbowParenthesesLoadRound

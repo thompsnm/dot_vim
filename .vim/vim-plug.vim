@@ -94,7 +94,7 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'matthewsimo/angular-vim-snippets', { 'for': ['javascript', 'coffee'] }
-Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'coffee'] }
+Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 "   HTML
 Plug 'indenthtml.vim', { 'for': ['html', 'hbs'] }

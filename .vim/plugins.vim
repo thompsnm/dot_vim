@@ -217,23 +217,23 @@ nnoremap <Leader>t<Bar> :Tabularize /<Bar><CR>
 vnoremap <Leader>t<Bar> :Tabularize /<Bar><CR>
 
 " ---------------
-" Fugitive
+" Gita
 " ---------------
-nnoremap <Leader>gb :Gblame<CR>
-nnoremap <Leader>gl :Glog --graph --pretty=oneline --abbrev-commit -n 20<CR>
-nnoremap <Leader>gc :Gcommit -v<CR>
-nnoremap <Leader>gw :Gwrite<CR>
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gp :Git push<CR>
+nnoremap <Leader>gb :Gita blame<CR>
+nnoremap <Leader>gl :Gita log --graph --pretty=oneline --abbrev-commit -n 20<CR>
+nnoremap <Leader>gc :Gita commit<CR>
+"nnoremap <Leader>gw :Gwrite<CR>
+nnoremap <Leader>gs :Gita status<CR>
+nnoremap <Leader>gp :Gita push<CR>
  " Mnemonic, gu = Git Update
-nnoremap <Leader>gu :Git pull<CR>
-nnoremap <Leader>gd :Gvdiff<CR>
+nnoremap <Leader>gu :Gita pull<CR>
+nnoremap <Leader>gd :vertical Gita diff<CR>
 " Exit a diff by closing the diff window
 nnoremap <Leader>gx :wincmd h<CR>:q<CR>
 " Start git command
-nnoremap <leader>gi :Git<space>
+nnoremap <leader>gi :Gita<space>
 " Undo the last commit
-command! Gcundo :Git reset HEAD~1
+command! Gcundo :Gita reset HEAD~1
 
 " ---------------
 " Zoomwin

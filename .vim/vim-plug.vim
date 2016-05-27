@@ -101,9 +101,10 @@ Plug 'indenthtml.vim', { 'for': ['html', 'hbs'] }
 Plug 'mustache/vim-mustache-handlebars', { 'for': ['html', 'hbs'] }
 Plug 'othree/html5.vim', { 'for': ['html', 'hbs'] }
 "   Other Languages
-Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass'] }
+Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass', 'scss'] }
 Plug 'fatih/vim-go', { 'for': ['go'] }
-Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'less', 'sass'] }
+Plug 'gcorne/vim-sass-lint'
+Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'less', 'scss'] }
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'luishdez/vim-less', { 'for': 'less' }
 Plug 'samsonw/vim-task', { 'for': 'task' }

@@ -5,3 +5,4 @@ extra.vim
 Session.vim
 .vim/autoload/
 .vim/.netrwhist
+.config/configstore/

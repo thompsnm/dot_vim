@@ -6,3 +6,6 @@ Session.vim
 .vim/autoload/
 .vim/.netrwhist
 .config/configstore/
+.config/gcloud/
+.config/hub
+.config/wireshark

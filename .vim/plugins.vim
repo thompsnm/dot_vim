@@ -267,7 +267,7 @@ nnoremap <leader>u :CtrlPCurFile<CR>
 nnoremap <leader>m :CtrlPMRUFiles<CR>
 
 if executable('ag')
-  " Use Ag over Grep
+  " Use ag over Grep
   set grepprg=ag\ --nogroup\ --nocolor
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
@@ -333,13 +333,25 @@ let g:rbpt_colorpairs = [
     \ ]
 
 " ---------------
-" Ag.vim
+" ack.vim
 " ---------------
-let g:ag_highlight = 1
-nnoremap <silent> <leader>as :AgFromSearch<CR>
-nnoremap <leader>ag :Ag!<space>
-vnoremap <leader>ag "xy :Ag! "<c-r>x"
-nnoremap <leader>sag :Ag! <c-r><c-w>
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
+let g:ackhighlight = 1
+nnoremap <silent> <leader>as :AckFromSearch<CR>
+nnoremap \ :Ack!<space>
+nnoremap <leader>ag :Ack!<space>
+vnoremap <leader>ag "xy :Ack! "<C-R>x"
+nnoremap <leader>sag :Ack! <C-R><C-W>
+" bind K to grep highlighted text
+vnoremap K "xy :Ack! "<C-R>x"<CR>
+" bind K to grep word under cursor
+nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>
 
 " ---------------
 " surround.vim

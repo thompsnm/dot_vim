@@ -42,7 +42,7 @@ Plug 'dansomething/vim-eclim'
 Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
 Plug 'mattn/emmet-vim'
 Plug 'Valloric/ListToggle'
-Plug 'rking/ag.vim', { 'on': 'Ag' }
+Plug 'mileszs/ack.vim'
 Plug 'scratch.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-abolish'

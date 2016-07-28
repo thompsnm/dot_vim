@@ -20,21 +20,25 @@ nnoremap <Leader>ps :call PluginReloadAndRun("PlugStatus")<CR>
 " Eclim
 " -------
 let g:EclimCompletionMethod='omnifunc'
-nnoremap <Leader>ef :JavaFormat<CR>
-nnoremap <Leader>ei :JavaImport<CR>
-nnoremap <Leader>eio :JavaImportOrganize<CR>
-nnoremap <Leader>eg :JavaSearchContext<CR>
-nnoremap <Leader>et :JavaHierarchy<CR>
-nnoremap <Leader>er :JavaRename
-nnoremap <Leader>ej :JUnit<CR>
-nnoremap <Leader>ejf :JUnit %<CR>
-nnoremap <Leader>ec :JavaCorrect<CR>
-nnoremap <Leader>esr :JavaSearch -x references -s all<CR>
-nnoremap <Leader>eot :JavaSearch -t type -s all -p
-nnoremap <Leader>eor :LocateFile<CR>
-nnoremap <Leader>ep :ProjectProblems!<CR>
-nnoremap <Leader>era :ProjectRefreshAll<CR>
-nnoremap <Leader>eo :JavaImpl<CR>
+let g:EclimMavenPomClasspathUpdate=0
+let g:EclimMakeLCD=1
+let g:EclimDefaultFileOpenAction='vsplit'
+let g:EclimShowQuickfixSigns=1
+let g:EclimValidateSortResults='severity'
+nnoremap ecs :Checkstyle<CR>
+nnoremap eio :JavaImportOrganize<CR>
+nnoremap ejc :JavaCorrect<CR>
+nnoremap ejf :JavaFormat<CR>
+nnoremap ejh :JavaHierarchy<CR>
+nnoremap eji :JavaImport<CR>
+nnoremap ejr :JavaRename <c-r><c-w>
+nnoremap eju :JUnit %<CR>
+nnoremap epp :ProjectProblems!<CR>
+nnoremap era :ProjectRefreshAll<CR>
+nnoremap esc :JavaSearchContext<CR>
+nnoremap esi :JavaSearch -x implementors -a vsplit<CR>
+nnoremap esr :JavaSearch -x references -s all<CR>
+nnoremap est :JavaSearch -t type -s all -p
 
 " Disable autocmoplete scratch buffer
 set completeopt-=preview

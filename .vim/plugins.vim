@@ -33,6 +33,7 @@ nnoremap ejh :JavaHierarchy<CR>
 nnoremap eji :JavaImport<CR>
 nnoremap ejr :JavaRename <c-r><c-w>
 nnoremap eju :JUnit %<CR>
+nnoremap eo :execute "Dispatch open -a Eclipse " . expand('%')<CR>
 nnoremap epp :ProjectProblems!<CR>
 nnoremap era :ProjectRefreshAll<CR>
 nnoremap esc :JavaSearchContext<CR>

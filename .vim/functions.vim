@@ -244,17 +244,18 @@ nnoremap <silent>yl :call YankLineWithoutNewline()<CR>
 " ---------------
 " Run the current file as a Maven test
 " ---------------
+"TODO Check for pom.xml or build.gradle and then run the correct command in one function
 function! MavenTest()
   :Dispatch mvn test -Dtest=%:t:r -DfailIfNoTests=true
 endfunction
 command! MavenTest call MavenTest()
-nnoremap <silent> <leader>mt :MavenTest<CR>
+nnoremap <silent> xt :MavenTest<CR>
 
 function! MavenIntegrationTest()
   :Dispatch mvn integration-test -Dit.test=%:t:r -DfailIfNoTests=true -Dskip.unit.tests=true
 endfunction
 command! MavenIntegrationTest call MavenIntegrationTest()
-nnoremap <silent> <leader>mit :MavenIntegrationTest<CR>
+nnoremap <silent> xit :MavenIntegrationTest<CR>
 
 " ---------------
 " Run the current file as a Gradle test

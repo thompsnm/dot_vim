@@ -16,6 +16,12 @@ nnoremap <Leader>pu :call PluginReloadAndRun("PlugUpdate")<CR>
 nnoremap <Leader>pc :call PluginReloadAndRun("PlugClean")<CR>
 nnoremap <Leader>ps :call PluginReloadAndRun("PlugStatus")<CR>
 
+"----------
+" Dispatch
+"----------
+let g:dispatch_tmux_height = 15
+let g:dispatch_quickfix_height =  10
+
 " -------
 " Eclim
 " -------
@@ -31,6 +37,7 @@ nnoremap ejc :JavaCorrect<CR>
 nnoremap ejf :JavaFormat<CR>
 nnoremap ejh :JavaHierarchy<CR>
 nnoremap eji :JavaImport<CR>
+nnoremap ejm :JavaMove<space>
 nnoremap ejr :JavaRename <c-r><c-w>
 nnoremap eju :JUnit %<CR>
 nnoremap eo :execute "Dispatch open -a Eclipse " . expand('%')<CR>

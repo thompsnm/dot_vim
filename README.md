@@ -54,7 +54,7 @@ dependencies.
 * [Ag.vim](https://github.com/rking/ag.vim) requires
   [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) to be
   installed. This also greatly speeds up CtrlP.
-* [Hack (for Powerline)](https://git.io/vgUwx) The custom font I'm using
+* [Sauce Code Powerline](https://github.com/powerline/fonts/tree/master/SourceCodePro) The custom font I'm using
   for vim-airline.
 
 ## Plugin List

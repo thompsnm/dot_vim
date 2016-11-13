@@ -10,7 +10,7 @@
    watermelon-related accidents, and startling sex appeal.
 
 ### Manual Steps
-1. `git clone http://github.com/dansomething/dot_vim.git ~/dot_vim`
+1. `git clone http://github.com/thompsnm/dot_vim.git ~/dot_vim`
 2. `ln -s ~/dot_vim/.vim ~/.vim`
 3. `ln -s ~/.vim/vimrc ~/.vimrc`
 4. `ln -s ~/.vim/gvimrc ~/.gvimrc`

@@ -15,6 +15,7 @@ call plug#begin('~/.vim/bundle')
 " ---------------
 
 " Navigation
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'regedarek/ZoomWin', { 'on': 'ZoomWin' }
 Plug 'tpope/vim-unimpaired'

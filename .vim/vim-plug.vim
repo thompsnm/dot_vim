@@ -15,8 +15,6 @@ call plug#begin('~/.vim/bundle')
 " ---------------
 
 " Navigation
-Plug 'easymotion/vim-easymotion'
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'regedarek/ZoomWin', { 'on': 'ZoomWin' }
 Plug 'tpope/vim-unimpaired'
@@ -24,7 +22,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'edkolev/tmuxline.vim'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'majutsushi/tagbar' | Plug 'szw/vim-tags'
 Plug 'mbbill/undotree'
 Plug 'mhinz/vim-signify'
 Plug 'mhinz/vim-startify'
@@ -34,39 +31,24 @@ Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 " Commands
 Plug 'AndrewRadev/sideways.vim'
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'AndrewRadev/switch.vim'
 Plug 'HelpClose'
 Plug 'bronson/vim-visual-star-search'
-Plug 'dansomething/vim-eclim'
-Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
-Plug 'mattn/emmet-vim'
-Plug 'Valloric/ListToggle'
 Plug 'mileszs/ack.vim'
+Plug 'rking/ag.vim'
 Plug 'scratch.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'vim-scripts/UnconditionalPaste'
 " Automatic Helpers
 Plug 'MarcWeber/vim-addon-local-vimrc'
-Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
-Plug 'matchit.zip'
 Plug 'rizzatti/dash.vim', { 'on': 'Dash' }
 Plug 'scrooloose/syntastic'
-Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-repeat'
-"    UltiSnips
-if v:version >= 704
-  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-endif
 "   YouCompleteMe
 if v:version > 703 || (v:version == 703 && has('patch584'))
   function! BuildYCM(info)
@@ -81,15 +63,6 @@ if v:version > 703 || (v:version == 703 && has('patch584'))
   Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 endif
 " Language Additions
-"   Clojure
-Plug 'guns/vim-clojure-highlight', { 'for': 'clojure' }
-Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
-Plug 'guns/vim-sexp', { 'for': 'clojure' }
-Plug 'guns/vim-slamhound', { 'for': 'clojure' }
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-Plug 'tpope/vim-projectionist', { 'for': 'clojure' }
-Plug 'tpope/vim-salve', { 'for': 'clojure' }
-Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 "   JavaScript
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }

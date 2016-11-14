@@ -16,50 +16,6 @@ nnoremap <Leader>pu :call PluginReloadAndRun("PlugUpdate")<CR>
 nnoremap <Leader>pc :call PluginReloadAndRun("PlugClean")<CR>
 nnoremap <Leader>ps :call PluginReloadAndRun("PlugStatus")<CR>
 
-"----------
-" Dispatch
-"----------
-let g:dispatch_tmux_height = 15
-let g:dispatch_quickfix_height =  10
-
-" -------
-" Eclim
-" -------
-let g:EclimCompletionMethod='omnifunc'
-let g:EclimMavenPomClasspathUpdate=0
-let g:EclimMakeLCD=1
-let g:EclimDefaultFileOpenAction='vsplit'
-let g:EclimShowQuickfixSigns=1
-let g:EclimValidateSortResults='severity'
-nnoremap ecs :Checkstyle<CR>
-nnoremap eio :JavaImportOrganize<CR>
-nnoremap ejc :JavaCorrect<CR>
-nnoremap ejf :JavaFormat<CR>
-nnoremap ejh :JavaHierarchy<CR>
-nnoremap eji :JavaImport<CR>
-nnoremap ejm :JavaMove<space>
-nnoremap ejr :JavaRename <c-r><c-w>
-nnoremap eju :JUnit %<CR>
-nnoremap eo :execute "Dispatch open -a Eclipse " . expand('%')<CR>
-nnoremap epp :ProjectProblems!<CR>
-nnoremap era :ProjectRefreshAll<CR>
-nnoremap esc :JavaSearchContext<CR>
-nnoremap esi :JavaSearch -x implementors -a vsplit<CR>
-nnoremap esr :JavaSearch -x references -s all<CR>
-nnoremap est :JavaSearch -t type -s all -p
-
-" Disable autocmoplete scratch buffer
-set completeopt-=preview
-set completeopt+=longest
-
-"------------
-" EasyMotion
-"------------
-let g:EasyMotion_smartcase = 1
-let g:EasyMotion_use_smartsign_us = 1
-
-nmap <Leader>s <Plug>(easymotion-sn)
-
 " ---------------
 " space.vim
 " ---------------
@@ -87,105 +43,6 @@ let g:vim_tags_auto_generate = 0
 let g:vim_tags_use_vim_dispatch = 1
 
 " ---------------
-" Tagbar
-" ---------------
-nnoremap <leader>tt :TagbarToggle<CR>
-let g:tagbar_autofocus = 1
-let g:tagbar_autoclose = 1
-let g:tagbar_compact = 1
-let g:tagbar_width = 60
-
-let g:tagbar_type_coffee = {
-    \ 'ctagstype' : 'coffee',
-    \ 'kinds'     : [
-        \ 'n:ng-component',
-        \ 't:ng-scope-variable',
-        \ 'c:classes',
-        \ 'm:methods',
-        \ 'p:fields',
-        \ 'f:functions:1:1',
-        \ 'v:variables:1:0',
-        \ 'o:object',
-        \ 'a:array:1:0',
-        \ 's:string:1:0'
-    \ ]
-\ }
-
-let g:tagbar_type_go = {
-    \ 'ctagstype' : 'go',
-    \ 'kinds'     : [
-        \ 'p:package',
-        \ 'i:imports:1',
-        \ 'c:constants',
-        \ 'v:variables',
-        \ 't:types',
-        \ 'n:interfaces',
-        \ 'w:fields',
-        \ 'e:embedded',
-        \ 'm:methods',
-        \ 'r:constructor',
-        \ 'f:functions'
-    \ ],
-    \ 'sro' : '.',
-    \ 'kind2scope' : {
-        \ 't' : 'ctype',
-        \ 'n' : 'ntype'
-    \ },
-    \ 'scope2kind' : {
-        \ 'ctype' : 't',
-        \ 'ntype' : 'n'
-    \ },
-    \ 'ctagsbin'  : 'gotags',
-    \ 'ctagsargs' : '-sort -silent'
-\ }
-
-let g:tagbar_type_groovy = {
-    \ 'ctagstype' : 'groovy',
-    \ 'kinds'     : [
-        \ 'p:package',
-        \ 'c:class',
-        \ 'i:interface',
-        \ 'f:function',
-        \ 'v:variables',
-    \ ]
-\ }
-
-let g:tagbar_type_html = {
-    \ 'ctagstype' : 'html',
-    \ 'kinds'     : [
-        \ 'o:ng-*'
-    \ ]
-\ }
-
-let g:tagbar_type_cucumber = {
-    \ 'ctagstype': 'cucumber',
-    \ 'kinds': [
-        \'d:definition'
-      \]
-    \}
-
-let g:tagbar_type_css = {
-    \ 'ctagstype' : 'css',
-    \ 'kinds'     : [
-        \ 'c:class',
-        \ 'i:id',
-        \ 'm:media',
-        \ 't:tag'
-    \ ]
-\ }
-
-let g:tagbar_type_less = {
-    \ 'ctagstype' : 'css',
-    \ 'kinds'     : [
-        \ 'c:class',
-        \ 'i:id',
-        \ 'm:media',
-        \ 't:tag',
-        \ 'v:variables',
-    \ ]
-\ }
-
-" ---------------
 " NERDTree
 " ---------------
 nnoremap <leader>nn :NERDTreeToggle<CR>
@@ -209,24 +66,6 @@ let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 let g:session_autosave = 0
 let g:session_autoload = 0
 nnoremap <leader>os :OpenSession<CR>
-
-" ---------------
-" Tabular
-" ---------------
-nnoremap <Leader>t& :Tabularize /&<CR>
-vnoremap <Leader>t& :Tabularize /&<CR>
-nnoremap <Leader>t= :Tabularize /=<CR>
-vnoremap <Leader>t= :Tabularize /=<CR>
-nnoremap <Leader>t: :Tabularize /:<CR>
-vnoremap <Leader>t: :Tabularize /:<CR>
-nnoremap <Leader>t:: :Tabularize /:\zs<CR>
-vnoremap <Leader>t:: :Tabularize /:\zs<CR>
-nnoremap <Leader>t, :Tabularize /,<CR>
-vnoremap <Leader>t, :Tabularize /,<CR>
-nnoremap <Leader>t,, :Tabularize /,\zs<CR>
-vnoremap <Leader>t,, :Tabularize /,\zs<CR>
-nnoremap <Leader>t<Bar> :Tabularize /<Bar><CR>
-vnoremap <Leader>t<Bar> :Tabularize /<Bar><CR>
 
 " ---------------
 " Fugitive
@@ -380,35 +219,6 @@ xmap aa <Plug>SidewaysArgumentTextobjA
 omap ia <Plug>SidewaysArgumentTextobjI
 xmap ia <Plug>SidewaysArgumentTextobjI
 
-" -------------
-" splitjoin.vim
-" -------------
-let g:splitjoin_split_mapping = 'sk'
-let g:splitjoin_join_mapping  = 'sj'
-
-" ---------------
-" switch.vim
-" ---------------
-let g:switch_mapping = "-"
-autocmd FileType coffee let g:switch_custom_definitions =
-    \ [
-    \   [' ->', ' =>', ' (done) ->', ' (done) =>'],
-    \ ]
-autocmd BufNewFile,BufRead *[Ss]pec.coffee let g:switch_custom_definitions =
-    \ [
-    \   {
-    \     '^\(\s\+\)\?describe \(''[^'']\+''\)':  '\1xdescribe \2',
-    \     '^\(\s\+\)\?xdescribe \(''[^'']\+''\)':  '\1describe.only \2',
-    \     '^\(\s\+\)\?describe.only \(''[^'']\+''\)':  '\1describe \2',
-    \   },
-    \   {
-    \     '^\(\s\+\)xit \(''[^'']\+''\)':  '\1it.only \2',
-    \     '^\(\s\+\)it.only \(''[^'']\+''\)':  '\1it \2',
-    \     '^\(\s\+\)it \(''[^'']\+''\)':  '\1xit \2',
-    \   },
-    \   [' ->', ' =>', ' (done) ->', ' (done) =>'],
-    \ ]
-
 " ---------------
 " indenthtml
 " ---------------
@@ -416,13 +226,6 @@ autocmd BufNewFile,BufRead *[Ss]pec.coffee let g:switch_custom_definitions =
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
-
-" ---------------
-" Unconditional Paste
-" ---------------
-let g:UnconditionalPaste_NoDefaultMappings = 1
-nnoremap gcP <Plug>UnconditionalPasteCharBefore
-nnoremap gcp <Plug>UnconditionalPasteCharAfter
 
 " ---------------
 " MatchTagAlways
@@ -451,12 +254,6 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_semantic_triggers =  {
   \   'css,less' : ['re!:\s+'],
   \ }
-
-" ---------------
-" Ultisnips
-" ---------------
-let g:UltiSnipsExpandTrigger="<leader><Enter>"
-let g:UltiSnipsListSnippets="<leader><tab>"
 
 " ---------------
 " vim-signify
@@ -521,11 +318,6 @@ let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
-"---------
-" Clojure
-"---------
-nnoremap <silent> <leader>sh :Slamhound<CR>
-
 "-------------
 " CoffeeScript
 "-------------
@@ -545,18 +337,4 @@ nmap <silent> <leader>d <Plug>DashSearch
 let g:dash_map = {
     \ 'coffee' :  ['coffee', 'javascript', 'jquery', 'jqueryui', 'jquerym', 'angularjs', 'backbone', 'marionette', 'meteor', 'sproutcore', 'moo', 'prototype', 'bootstrap', 'foundation', 'lodash', 'underscore', 'ember', 'sencha', 'extjs', 'titanium', 'knockout', 'zepto', 'yui', 'd3', 'svg', 'dojo', 'coffee', 'nodejs', 'express', 'grunt', 'mongoose', 'moment', 'require', 'awsjs', 'jasmine', 'sinon', 'chai', 'html', 'css', 'cordova', 'phonegap', 'unity3d'],
     \ 'less' : 'css'
-    \ }
-
-"--------------
-" tmuxline.vim
-"--------------
-let g:tmuxline_preset = {
-    \ 'a'    : '❐ #S',
-    \ 'b'    : '#H',
-    \ 'c'    : '#(whoami)',
-    \ 'win'  : ['#I', '#W'],
-    \ 'cwin' : ['#I', '#W'],
-    \ 'x'    : ['%I:%M %p', '%D'],
-    \ 'y'    : '⚡️ #(battery)',
-    \ 'z'    : '#(tmux-mem-cpu-load)'
     \ }

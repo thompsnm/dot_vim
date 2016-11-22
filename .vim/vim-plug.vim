@@ -48,6 +48,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/UnconditionalPaste'
 " Automatic Helpers

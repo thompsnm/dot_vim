@@ -246,13 +246,14 @@ nnoremap <silent>yl :call YankLineWithoutNewline()<CR>
 " ---------------
 "TODO Check for pom.xml or build.gradle and then run the correct command in one function
 function! MavenTest()
-  :Dispatch mvn test -Dtest=%:t:r -DfailIfNoTests=true -Dsurefire.argLine="$JAVA_OPTS"
+  " Inserts the current file name for the test
+  :Dispatch mvn test -Dtest=%:t:r -DfailIfNoTests=false -Dsurefire.argLine="$JAVA_OPTS"
 endfunction
 command! MavenTest call MavenTest()
 nnoremap <silent> xt :MavenTest<CR>
 
 function! MavenIntegrationTest()
-  :Dispatch mvn integration-test -Dit.test=%:t:r -DfailIfNoTests=true -Dskip.unit.tests=true -Dfailsafe.argLine="$JAVA_OPTS"
+  :Dispatch mvn integration-test -Dit.test=%:t:r -DfailIfNoTests=false -Dskip.unit.tests=true -Dfailsafe.argLine="$JAVA_OPTS"
 endfunction
 command! MavenIntegrationTest call MavenIntegrationTest()
 nnoremap <silent> xit :MavenIntegrationTest<CR>

@@ -33,6 +33,7 @@ let g:EclimShowQuickfixSigns=1
 let g:EclimValidateSortResults='severity'
 nnoremap ecs :Checkstyle<CR>
 nnoremap eio :JavaImportOrganize<CR>
+nnoremap ejd :JavaDocComment<CR>
 nnoremap ejc :JavaCorrect<CR>
 nnoremap ejf :JavaFormat<CR>
 nnoremap ejh :JavaHierarchy<CR>

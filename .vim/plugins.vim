@@ -189,6 +189,16 @@ let g:tagbar_type_less = {
     \ ]
 \ }
 
+let g:tagbar_type_markdown = {
+    \ 'ctagstype' : 'markdown',
+    \ 'kinds' : [
+        \ 'h:Heading 1',
+        \ 'i:Heading 2',
+        \ 'k:Heading 3',
+        \ 'l:Heading 4'
+    \ ]
+\ }
+
 " ---------------
 " NERDTree
 " ---------------

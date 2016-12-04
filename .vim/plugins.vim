@@ -141,13 +141,16 @@ let g:tagbar_type_go = {
 \ }
 
 let g:tagbar_type_groovy = {
-    \ 'ctagstype' : 'groovy',
+    \ 'ctagstype' : 'Groovy',
     \ 'kinds'     : [
         \ 'p:package',
-        \ 'c:class',
-        \ 'i:interface',
-        \ 'f:function',
-        \ 'v:variables',
+        \ 'c:classes',
+        \ 'i:interfaces',
+        \ 't:traits',
+        \ 'e:enums',
+        \ 'r:constructors',
+        \ 'm:methods',
+        \ 'f:fields:1'
     \ ]
 \ }
 

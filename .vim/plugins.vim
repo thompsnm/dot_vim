@@ -199,6 +199,35 @@ let g:tagbar_type_markdown = {
     \ ]
 \ }
 
+let g:tagbar_type_xml = {
+    \ 'ctagstype' : 'WSDL',
+    \ 'kinds'     : [
+        \ 'n:namespaces',
+        \ 'm:messages',
+        \ 'p:portType',
+        \ 'o:operations',
+        \ 'b:bindings',
+        \ 's:service'
+    \ ]
+\ }
+
+let g:tagbar_type_xsd = {
+    \ 'ctagstype' : 'XSD',
+    \ 'kinds'     : [
+        \ 'e:elements',
+        \ 'c:complexTypes',
+        \ 's:simpleTypes'
+    \ ]
+\ }
+
+let g:tagbar_type_xslt = {
+  \ 'ctagstype' : 'xslt',
+  \ 'kinds' : [
+    \ 'v:variables',
+    \ 't:templates'
+  \ ]
+\}
+
 " ---------------
 " NERDTree
 " ---------------
@@ -246,7 +275,10 @@ vnoremap <Leader>t<Bar> :Tabularize /<Bar><CR>
 " Fugitive
 " ---------------
 nnoremap <Leader>gb :Gblame<CR>
-nnoremap <Leader>gl :Glog --graph --pretty=oneline --abbrev-commit -n 20<CR>
+"nnoremap <Leader>gl :Glog --graph --pretty=oneline --abbrev-commit -n 20<CR>
+nnoremap <Leader>gL :GV<CR>
+nnoremap <Leader>gl :GV?<CR>
+vnoremap gl :GV?<CR>
 nnoremap <Leader>gc :Gcommit -v<CR>
 nnoremap <Leader>gw :Gwrite<CR>
 nnoremap <Leader>gs :Gstatus<CR>

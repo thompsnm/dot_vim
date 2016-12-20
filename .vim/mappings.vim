@@ -25,6 +25,9 @@ nnoremap vy ggVG
 " Hat-tip http://vimbits.com/bits/11
 nnoremap Y y$
 
+" Paste without overwriting what's in register 0. From http://vim.wikia.com/wiki/Replace_a_word_with_yanked_text
+xnoremap <leader>p "_dP
+
 " Just to beginning and end of lines easier. From http://vimbits.com/bits/16
 noremap H ^
 noremap L $

@@ -103,12 +103,15 @@ Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'indenthtml.vim', { 'for': ['html', 'hbs'] }
 Plug 'mustache/vim-mustache-handlebars', { 'for': ['html', 'hbs'] }
 Plug 'othree/html5.vim', { 'for': ['html', 'hbs'] }
+"   TypeScript
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
+Plug 'Quramy/tsuquyomi', { 'for': ['typescript'] }
+  \ | Plug 'Shougo/vimproc.vim', { 'for': 'typescript', 'do': 'make' }
 "   Other Languages
 Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass', 'scss'] }
 Plug 'fatih/vim-go', { 'for': ['go'] }
 Plug 'gcorne/vim-sass-lint'
 Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'less', 'scss'] }
-Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'luishdez/vim-less', { 'for': 'less' }
 Plug 'samsonw/vim-task', { 'for': 'task' }
 Plug 'tfnico/vim-gradle', { 'for': 'groovy' }

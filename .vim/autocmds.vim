@@ -23,7 +23,7 @@ if has("autocmd")
 
     " Fix trailing whitespace in my most used programming langauges
     autocmd BufWritePre *.py,*.coffee,*.css,*.less,*.js,*.coffee,
-          \*.rb,*.erb,*.groovy,*.java,*.php,*.ftl silent! :StripTrailingWhiteSpace
+          \*.rb,*.erb,*.groovy,*.java,*.php,*.ftl,*.ts silent! :StripTrailingWhiteSpace
 
     autocmd BufRead,BufNewFile .jshintrc,.bowerrc set filetype=json
 

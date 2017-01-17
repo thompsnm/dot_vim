@@ -32,23 +32,7 @@ let g:EclimMakeLCDWarning=0
 let g:EclimDefaultFileOpenAction='vsplit'
 let g:EclimShowQuickfixSigns=1
 let g:EclimValidateSortResults='severity'
-nnoremap ecs :Checkstyle<CR>
-nnoremap eio :JavaImportOrganize<CR>
-nnoremap ejd :JavaDocComment<CR>
-nnoremap ejc :JavaCorrect<CR>
-nnoremap ejf :JavaFormat<CR>
-nnoremap ejh :JavaHierarchy<CR>
-nnoremap eji :JavaImport<CR>
-nnoremap ejm :JavaMove<space>
-nnoremap ejr :JavaRename <c-r><c-w>
-nnoremap eju :JUnit %<CR>
-nnoremap eo :execute "Dispatch open -a Eclipse " . expand('%')<CR>
-nnoremap epp :ProjectProblems!<CR>
-nnoremap era :ProjectRefreshAll<CR>
-nnoremap esc :JavaSearchContext<CR>
-nnoremap esi :JavaSearch -x implementors -a vsplit<CR>
-nnoremap esr :JavaSearch -x references -s all<CR>
-nnoremap est :JavaSearch -t type -s all -p
+" See .ftplugin/java.vim for mappings
 
 " Disable autocmoplete scratch buffer
 set completeopt-=preview

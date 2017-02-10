@@ -21,7 +21,7 @@
 
 [![MacVim][ss]][ss]
 
-[ss]: https://raw.githubusercontent.com/mutewinter/dot_vim/master/screenshots/iTerm.png
+[ss]: https://raw.githubusercontent.com/mutewinter/dot_vim/master/screenshots/screenshot_1.png
 
 ## Requirements
 

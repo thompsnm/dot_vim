@@ -56,7 +56,7 @@ nnoremap <silent> gp :wincmd p<CR>
 " Equal Size Windows
 nnoremap <silent> g= :wincmd =<CR>
 " Swap Windows
-nnoremap <silent> gx :wincmd x<CR>
+nnoremap <silent> gr :wincmd x<CR>
 
 " ---------------
 " Modifer Mappings

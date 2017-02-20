@@ -270,14 +270,10 @@ vnoremap <Leader>t,, :Tabularize /,\zs<CR>
 nnoremap <Leader>t<Bar> :Tabularize /<Bar><CR>
 vnoremap <Leader>t<Bar> :Tabularize /<Bar><CR>
 
-" ---------------
+" --------
 " Fugitive
-" ---------------
+" --------
 nnoremap <Leader>gb :Gblame<CR>
-"nnoremap <Leader>gl :Glog --graph --pretty=oneline --abbrev-commit -n 20<CR>
-nnoremap <Leader>gL :GV<CR>
-nnoremap <Leader>gl :GV?<CR>
-vnoremap gl :GV?<CR>
 nnoremap <Leader>gc :Gcommit -v<CR>
 nnoremap <Leader>gw :Gwrite<CR>
 nnoremap <Leader>gs :Gstatus<CR>
@@ -291,6 +287,13 @@ nnoremap <Leader>gx :wincmd h<CR>:q<CR>
 nnoremap <leader>gi :Git<space>
 " Undo the last commit
 command! Gcundo :Git reset HEAD~1
+
+"-------
+" gv.vim
+"-------
+nnoremap <Leader>gl :GV<CR>
+nnoremap <Leader>gv :GV?<CR>
+vnoremap gl :GV?<CR>
 
 " ---------------
 " Zoomwin

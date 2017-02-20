@@ -37,7 +37,7 @@ Plug 'AndrewRadev/sideways.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
 Plug 'HelpClose'
-Plug 'bronson/vim-visual-star-search'
+Plug 'junegunn/vim-slash'
 Plug 'dansomething/vim-eclim'
 Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
 Plug 'mattn/emmet-vim'

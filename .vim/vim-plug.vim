@@ -23,6 +23,7 @@ Plug 'tpope/vim-unimpaired'
 " UI Additions
 Plug 'edkolev/tmuxline.vim'
 Plug 'jszakmeister/vim-togglecursor'
+Plug 'junegunn/vim-peekaboo'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'majutsushi/tagbar' | Plug 'szw/vim-tags'
 Plug 'mbbill/undotree'

@@ -64,6 +64,7 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-repeat'
+Plug 'ntpeters/vim-better-whitespace'
 "    UltiSnips
 if v:version >= 704
   Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'

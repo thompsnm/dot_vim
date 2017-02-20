@@ -21,9 +21,8 @@ if has("autocmd")
           \   exe "normal! g`\"" |
           \ endif
 
-    " Fix trailing whitespace in my most used programming langauges
-    autocmd BufWritePre *.py,*.coffee,*.css,*.less,*.js,*.coffee,
-          \*.rb,*.erb,*.groovy,*.java,*.php,*.ftl,*.ts silent! :StripTrailingWhiteSpace
+    " Fix trailing whitespace in every type not in g:better_whitespace_filetypes_blacklist
+    autocmd BufEnter * EnableStripWhitespaceOnSave
 
     autocmd BufRead,BufNewFile .jshintrc,.bowerrc set filetype=json
 

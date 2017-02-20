@@ -576,6 +576,12 @@ nnoremap <silent> <leader>sh :Slamhound<CR>
 "-------------
 nnoremap <silent> <leader>vc :CoffeeWatch vert<CR>
 
+"--------------------------------
+" ntpeters/vim-better-whitespace
+"--------------------------------
+highlight ExtraWhitespace ctermbg = 235
+nnoremap <silent> <leader>stw :StripWhitespace<CR>
+
 "-------
 " Tasks
 "-------

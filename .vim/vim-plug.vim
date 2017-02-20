@@ -112,7 +112,7 @@ Plug 'Quramy/tsuquyomi', { 'for': ['typescript'] }
 "   Other Languages
 Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass', 'scss'] }
 Plug 'fatih/vim-go', { 'for': ['go'] }
-Plug 'gcorne/vim-sass-lint'
+Plug 'gcorne/vim-sass-lint', { 'for': ['sass', 'scss'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'less', 'scss'] }
 Plug 'luishdez/vim-less', { 'for': 'less' }
 Plug 'samsonw/vim-task', { 'for': 'task' }

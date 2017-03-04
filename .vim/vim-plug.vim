@@ -53,6 +53,7 @@ Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/UnconditionalPaste'
 " Automatic Helpers
+Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'MarcWeber/vim-addon-local-vimrc'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'

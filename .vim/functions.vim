@@ -20,25 +20,6 @@ command! QuickSpellingFix call QuickSpellingFix()
 nnoremap <silent> <leader>z :QuickSpellingFix<CR>
 
 " ---------------
-" Paste using Paste Mode
-"
-" Keeps indentation in source.
-" ---------------
-function! PasteWithPasteMode()
-  if &paste
-    normal p
-  else
-    " Enable paste mode and paste the text, then disable paste mode.
-    set paste
-    normal p
-    set nopaste
-  endif
-endfunction
-
-command! PasteWithPasteMode call PasteWithPasteMode()
-nnoremap <silent> <leader>p :PasteWithPasteMode<CR>
-
-" ---------------
 " Write Buffer if necessary.
 "
 " Writes the current buffer if it's needed, unless we're the in QuickFix mode.
@@ -237,5 +218,4 @@ function! ClearRegisters()
         let i=i+1
     endwhile
 endfunction
- 
 command! ClearRegisters call ClearRegisters()

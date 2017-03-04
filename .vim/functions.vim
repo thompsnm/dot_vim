@@ -219,3 +219,15 @@ function! ClearRegisters()
     endwhile
 endfunction
 command! ClearRegisters call ClearRegisters()
+
+"---------------------------------------
+" https://github.com/junegunn/vim-slash
+"---------------------------------------
+function! s:flash()
+  set cursorline!
+  redraw
+  sleep 20m
+  set cursorline!
+  return ''
+endfunction
+noremap <expr> <plug>(slash-after) <sid>flash()

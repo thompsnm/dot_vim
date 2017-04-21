@@ -56,7 +56,7 @@ Plug 'vim-scripts/UnconditionalPaste'
 " Automatic Helpers
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'MarcWeber/vim-addon-local-vimrc'
-Plug 'Raimondi/delimitMate'
+Plug 'jiangmiao/auto-pairs'
 Plug 'Valloric/MatchTagAlways'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'

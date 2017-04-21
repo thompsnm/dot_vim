@@ -2,6 +2,7 @@
 " vim-plug
 " ----------------------------------------
 
+" auto install vim-plug and plugins
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -44,7 +45,7 @@ Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
 Plug 'mattn/emmet-vim'
 Plug 'Valloric/ListToggle'
 Plug 'mileszs/ack.vim'
-Plug 'scratch.vim'
+Plug 'mtth/scratch.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-eunuch'

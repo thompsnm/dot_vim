@@ -8,7 +8,7 @@ let g:tsuquyomi_single_quote_import = 1
 let g:typescript_compiler_binary = 'tsc'
 let g:typescript_compiler_options = ''
 
-nnoremap <Space>gd :TsuDefinition<CR>
+nnoremap <Space>si :TsuDefinition<CR>
 nnoremap <Space>i :TsuImport<CR>
 nnoremap <Space>m :make<CR>
 nnoremap <Space>r :TsuRenameSymbol<CR>

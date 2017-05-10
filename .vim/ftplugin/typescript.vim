@@ -13,3 +13,5 @@ nnoremap <Space>i :TsuImport<CR>
 nnoremap <Space>m :make<CR>
 nnoremap <Space>r :TsuRenameSymbol<CR>
 nnoremap <Space>sr :TsuReferences<CR>
+
+UltiSnipsAddFiletypes javascript-jasmine-arrow

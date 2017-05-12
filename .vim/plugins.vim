@@ -621,7 +621,7 @@ let g:tmuxline_preset = {
     \ 'c'    : '#(whoami)',
     \ 'win'  : ['#I', '#W'],
     \ 'cwin' : ['#I', '#W'],
-    \ 'x'    : ['%I:%M %p', '%D'],
+    \ 'x'    : ['%I:%M %p'],
     \ 'y'    : '⚡️ #(battery)',
-    \ 'z'    : '#(tmux-mem-cpu-load)'
+    \ 'z'    : '#(tmux-mem-cpu-load -a0)'
     \ }

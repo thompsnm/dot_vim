@@ -1,5 +1,11 @@
 "kien/rainbow_parentheses.vim
 
+" Enable Rainbow Parentheses
+autocmd VimEnter * RainbowParenthesesToggle
+autocmd Syntax * RainbowParenthesesLoadRound
+autocmd Syntax * RainbowParenthesesLoadSquare
+autocmd Syntax * RainbowParenthesesLoadBraces
+
 let g:rbpt_max = 8
 let g:rbpt_colorpairs = [
     \ ['136',  '#b58900'],

@@ -21,15 +21,6 @@ if has("autocmd")
           \   exe "normal! g`\"" |
           \ endif
 
-    autocmd BufRead,BufNewFile .jshintrc,.bowerrc set filetype=json
-
-    " Enable Rainbow Parentheses
-    autocmd VimEnter * RainbowParenthesesToggle
-    autocmd Syntax * RainbowParenthesesLoadRound
-    autocmd Syntax * RainbowParenthesesLoadSquare
-    autocmd Syntax * RainbowParenthesesLoadBraces
-
-    " Disable Indent Guides for Clojure files
-    autocmd BufNewFile,BufEnter *.clj,*.cljs IndentGuidesDisable
+    autocmd BufRead,BufNewFile .jshintrc,.bowerrc,.firebaserc,.stylelintrc set filetype=json
   augroup end
 endif

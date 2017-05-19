@@ -22,7 +22,7 @@ if executable('rg')
   set grepprg=rg\ --vimgrep\ --no-heading
   set grepformat=%f:%l:%c:%m,%f:%l:%m
 
-  let g:ctrlp_user_command = 'rg --files %s'
+  let g:ctrlp_user_command = 'rg --hidden --glob "!.git/*" --files %s'
   let g:ctrlp_use_caching = 0
 elseif executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor

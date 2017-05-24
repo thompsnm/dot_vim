@@ -15,7 +15,7 @@ nnoremap <Space>si :TsuDefinition<CR>
 nnoremap <Space>i :TsuImport<CR>
 nnoremap <Space>m :make<CR>
 nnoremap <Space>p :TsuGeterrProject<CR>
-nnoremap <Space>r :TsuRenameSymbolC<CR>
+nnoremap <Space>r :TsuRenameSymbol<CR>
 nnoremap <Space>ra :TsuquyomiReloadProject<CR>
 nnoremap <Space>sr :TsuReferences<CR>
 

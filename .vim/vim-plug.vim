@@ -113,6 +113,7 @@ Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'Quramy/tsuquyomi', { 'for': ['typescript'] }
   \ | Plug 'Shougo/vimproc.vim', { 'for': 'typescript', 'do': 'make' }
 "   Other Languages
+Plug 'rhysd/vim-gfm-syntax'
 Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass', 'scss'] }
 Plug 'fatih/vim-go', { 'for': ['go'] }
 Plug 'gcorne/vim-sass-lint', { 'for': ['sass', 'scss'] }

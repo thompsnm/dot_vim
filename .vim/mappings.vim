@@ -131,11 +131,6 @@ nnoremap <leader>fef mx=ggG='x
 " Wrap the current line
 nnoremap <leader>fl Vgq
 
-" Format a json file with underscore-cli
-" https://github.com/ddopson/underscore-cli
-nnoremap <leader>jt <Esc>:%!underscore print<CR><Esc>:set filetype=json<CR>
-nnoremap <leader>jts <Esc>:%!underscore print --strict<CR><Esc>:set filetype=json<CR>
-
 " Split window vertically or horizontally *and* switch to the new split!
 nnoremap <silent> <leader>hs :split<Bar>:wincmd j<CR>
 nnoremap <silent> <leader>vs :vsplit<Bar>:wincmd l<CR>

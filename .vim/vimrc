@@ -14,6 +14,8 @@ source ~/.vim/plugins.vim
 source ~/.vim/functions.vim
 " Auto commands.
 source ~/.vim/autocmds.vim
+" Attempt to speed up large file handling
+source ~/.vim/largefiles.vim
 
 " Extra local only config that is not committed
 let extraFile=expand("~/.vim/extra.vim")

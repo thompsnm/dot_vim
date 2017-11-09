@@ -62,7 +62,7 @@ Plug 'Valloric/MatchTagAlways'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'vim-scripts/matchit.zip'
-Plug 'rizzatti/dash.vim', { 'on': 'Dash' }
+Plug 'rhysd/devdocs.vim'
 Plug 'scrooloose/syntastic'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'tpope/vim-dispatch'

@@ -58,14 +58,11 @@ nnoremap <silent> g4 :WriteBufferIfNecessary<CR>:wincmd b<CR>
 " Make line completion easier.
 inoremap <C-l> <C-x><C-l>
 
-" Easier Scrolling (think j/k with left hand)
-" All variations are mapped for now until I get used to one
-" C/M/D + d (page up)
-" C/M/D + f (page down)
-nnoremap <C-j> 15gjzz
-nnoremap <C-k> 15gkzz
-vnoremap <C-j> 15gjzz
-vnoremap <C-k> 15gkzz
+" Scroll larger amounts with C-j / C-k
+nnoremap gj 15gjzz
+nnoremap gk 15gkzz
+vnoremap gj 15gjzz
+vnoremap gk 15gkzz
 
 " ---------------
 " Insert Mode Mappings

@@ -81,12 +81,6 @@ inoremap jK <Esc>
 " Leader Mappings
 " ---------------
 
-" Change to the directory of the currently open file
-nmap <silent> <leader>cd :cd %:p:h<CR>
-
-" Change the directory only for the current window
-nmap <silent> <leader>lcd :lcd %:p:h<CR>
-
 " Search and replace word under cursor
 nnoremap <leader>sr :%s/\<<c-r><c-w>\>//<left>
 
@@ -121,9 +115,6 @@ nnoremap <silent> <leader>cul :normal "lyy"lpwv$r-^"lyyk"lP<cr>
 " Format the entire file
 nnoremap <leader>fef mx=ggG='x
 
-" Wrap the current line
-nnoremap <leader>fl Vgq
-
 " Split window vertically or horizontally *and* switch to the new split!
 nnoremap <silent> <leader>hs :split<Bar>:wincmd j<CR>
 nnoremap <silent> <leader>vs :vsplit<Bar>:wincmd l<CR>
@@ -138,13 +129,8 @@ nnoremap <silent> <leader>tn :tabnew<CR>
 " Typo Fixes
 " ---------------
 
-" Fixes common typos
-command! W w
-command! Q q
-
 noremap <F1> <Esc>
 inoremap <F1> <Esc>
-" Crazy flying pinky
 cnoremap w' w<CR>
 
 " Disable the ever-annoying Ex mode shortcut key. Type visual my ass. Instead,

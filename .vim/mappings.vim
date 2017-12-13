@@ -51,13 +51,6 @@ nnoremap <silent> g3 :WriteBufferIfNecessary<CR>:wincmd t<bar>:wincmd l<bar>
       \:wincmd l<CR>
 nnoremap <silent> g4 :WriteBufferIfNecessary<CR>:wincmd b<CR>
 
-" Previous Window
-nnoremap <silent> gp :wincmd p<CR>
-" Equal Size Windows
-nnoremap <silent> g= :wincmd =<CR>
-" Swap Windows
-nnoremap <silent> gr :wincmd x<CR>
-
 " ---------------
 " Modifer Mappings
 " ---------------

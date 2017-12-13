@@ -58,7 +58,7 @@ nnoremap <silent> g4 :WriteBufferIfNecessary<CR>:wincmd b<CR>
 " Make line completion easier.
 inoremap <C-l> <C-x><C-l>
 
-" Scroll larger amounts with C-j / C-k
+" Scroll larger amounts with g-j / g-k
 nnoremap gj 15gjzz
 nnoremap gk 15gkzz
 vnoremap gj 15gjzz

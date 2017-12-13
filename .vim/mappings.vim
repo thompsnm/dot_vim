@@ -4,8 +4,8 @@
 
 " Set leader to ,
 " Note: This line MUST come before any <leader> mappings
-let mapleader=","
-let maplocalleader = "\\"
+let mapleader=','
+let maplocalleader = ' '
 
 " ---------------
 " Regular Mappings
@@ -16,7 +16,7 @@ nnoremap ; :
 vnoremap ; :
 
 " Yank entire buffer with gy
-nnoremap gy :%y+<cr>
+nnoremap gy :0,$ y<cr>
 
 " Select entire buffer
 nnoremap vy ggVG
@@ -110,17 +110,17 @@ nnoremap <silent> <leader>uul :t.\|s/./=/\|:nohls<cr>
 "          # --------
 "          # Test 123
 "          # --------
-nnoremap <silent> <leader>cul :normal "lyy"lpwv$r-^"lyyk"lP<cr>
+nnoremap <silent> <leader>cul :normal "lyy"lpwvLr-^"lyyk"lP<cr>
 
 " Format the entire file
 nnoremap <leader>fef mx=ggG='x
 
 " Split window vertically or horizontally *and* switch to the new split!
-nnoremap <silent> <leader>hs :split<Bar>:wincmd j<CR>
-nnoremap <silent> <leader>vs :vsplit<Bar>:wincmd l<CR>
+nnoremap <silent> <leader>hs :split<Bar>:wincmd j<CR>:wincmd =<CR>
+nnoremap <silent> <leader>vs :vsplit<Bar>:wincmd l<CR>:wincmd =<CR>
 
 " Close the current window
-nnoremap <silent> <leader>sc :close<CR>
+nnoremap <silent> <m-w> :close<CR>
 
 " Open a new tab
 nnoremap <silent> <leader>tn :tabnew<CR>

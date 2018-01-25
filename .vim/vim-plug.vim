@@ -54,6 +54,7 @@ Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/UnconditionalPaste'
 " Automatic Helpers
+Plug 'iamcco/markdown-preview.vim', { 'for': ['md'] }
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'MarcWeber/vim-addon-local-vimrc'
 Plug 'jiangmiao/auto-pairs'

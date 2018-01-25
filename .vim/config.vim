@@ -5,12 +5,25 @@
 " ---------------
 " Color
 " ---------------
-set background=dark
-colorscheme jellybeans
-" Force 256 color mode if available
+" Use 256 color mode if available
 if $TERM =~ "-256color"
    set t_Co=256
 endif
+
+" Use 24-bit (true-color) mode if available 
+" https://github.com/neovim/neovim/wiki/FAQ#how-can-i-use-true-colors-in-the-terminal
+if (has("termguicolors"))
+  set termguicolors
+  if (!has("nvim"))
+    " set Vim-specific sequences for RGB colors
+    " https://github.com/vim/vim/issues/993#issuecomment-241675433
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  endif
+endif
+
+set background=dark
+colorscheme jellybeans
 
 " -----------------------------
 " File Locations

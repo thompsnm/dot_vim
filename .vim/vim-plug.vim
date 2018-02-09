@@ -18,7 +18,8 @@ call plug#begin('~/.vim/bundle')
 " Navigation
 Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-bash --no-zsh --no-fish' }
+Plug 'junegunn/fzf.vim'
 Plug 'regedarek/ZoomWin', { 'on': 'ZoomWin' }
 Plug 'tpope/vim-unimpaired'
 " UI Additions

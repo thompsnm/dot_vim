@@ -127,7 +127,7 @@ Plug 'tfnico/vim-gradle', { 'for': 'groovy' }
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
 Plug 'tpope/vim-cucumber', { 'for': ['feature', 'story'] }
 " Misc
-Plug 'ryanss/vim-hackernews', { 'on': 'HackerNews' }
+Plug 'dansomething/vim-hackernews', { 'on': 'HackerNews' }
 
 " Add plugins to &runtimepath
 call plug#end()

@@ -19,3 +19,4 @@ nnoremap <leader>t :Files<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>u :History<CR>
 nnoremap <leader>m :FZFMru<CR>
+nnoremap // :BLines<CR>

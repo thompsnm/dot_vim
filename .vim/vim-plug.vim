@@ -103,14 +103,11 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 Plug 'dansomething/pmd.vim', { 'for': 'java' }
 "   JavaScript
 Plug 'elzr/vim-json', { 'for': 'json' }
-Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-Plug 'matthewsimo/angular-vim-snippets', { 'for': ['javascript', 'coffee'] }
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 "   HTML
-Plug 'vim-scripts/indenthtml.vim', { 'for': ['html', 'hbs'] }
-Plug 'mustache/vim-mustache-handlebars', { 'for': ['html', 'hbs'] }
-Plug 'othree/html5.vim', { 'for': ['html', 'hbs'] }
+Plug 'vim-scripts/indenthtml.vim', { 'for': ['html'] }
+Plug 'othree/html5.vim', { 'for': ['html'] }
 "   TypeScript
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'Quramy/tsuquyomi', { 'for': ['typescript'] }
@@ -121,11 +118,9 @@ Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass', 'scss'] }
 Plug 'fatih/vim-go', { 'for': ['go'] }
 Plug 'gcorne/vim-sass-lint', { 'for': ['sass', 'scss'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'less', 'scss'] }
-Plug 'luishdez/vim-less', { 'for': 'less' }
 Plug 'samsonw/vim-task', { 'for': 'task' }
 Plug 'tfnico/vim-gradle', { 'for': 'groovy' }
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
-Plug 'tpope/vim-cucumber', { 'for': ['feature', 'story'] }
 " Misc
 Plug 'dansomething/vim-hackernews', { 'on': 'HackerNews' }
 

@@ -6,11 +6,6 @@ elseif executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
-cnoreabbrev ag Ack
-cnoreabbrev aG Ack
-cnoreabbrev Ag Ack
-cnoreabbrev AG Ack
-
 let g:ackhighlight = 1
 
 nnoremap <silent> <leader>as :AckFromSearch<CR>

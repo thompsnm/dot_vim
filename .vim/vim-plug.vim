@@ -111,7 +111,6 @@ Plug 'Quramy/tsuquyomi', { 'for': ['typescript'] }
 Plug 'rhysd/vim-gfm-syntax'
 Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass', 'scss'] }
 Plug 'fatih/vim-go', { 'for': ['go'] }
-Plug 'gcorne/vim-sass-lint', { 'for': ['sass', 'scss'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'less', 'scss'] }
 Plug 'samsonw/vim-task', { 'for': 'task' }
 Plug 'tfnico/vim-gradle', { 'for': 'groovy' }

@@ -96,8 +96,6 @@ Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'tpope/vim-projectionist', { 'for': 'clojure' }
 Plug 'tpope/vim-salve', { 'for': 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
-"   Java
-Plug 'dansomething/pmd.vim', { 'for': 'java' }
 "   JavaScript
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'othree/javascript-libraries-syntax.vim'

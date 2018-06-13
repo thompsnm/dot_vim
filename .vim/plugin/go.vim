@@ -1,7 +1,5 @@
 "fatih/vim-go
 
-let g:syntastic_go_checkers = ['go', 'golint', 'govet']
-
 " use goimports for formatting
 let g:go_fmt_command = "goimports"
 

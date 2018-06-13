@@ -1,7 +1,3 @@
-let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
-
-let g:tsuquyomi_completion_detail = 1
-" Disable default quickfix for Syntastic support
 let g:tsuquyomi_disable_quickfix = 1
 let g:tsuquyomi_shortest_import_path = 1
 let g:tsuquyomi_single_quote_import = 1

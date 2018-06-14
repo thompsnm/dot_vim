@@ -1,18 +1,9 @@
-let g:tsuquyomi_disable_quickfix = 1
-let g:tsuquyomi_shortest_import_path = 1
-let g:tsuquyomi_single_quote_import = 1
-
-let g:typescript_compiler_binary = 'tsc'
-let g:typescript_compiler_options = ''
-
-nnoremap <Space>c :TsuquyomiQuickFix<CR>
-nnoremap <Space>h :echo tsuquyomi#hint()<CR>
-nnoremap <Space>si :TsuDefinition<CR>
-nnoremap <Space>i :TsuImport<CR>
+nnoremap <Space>c :YcmCompleter FixIt<CR>
+nnoremap <Space>h :YcmCompleter GetDoc<CR>
+nnoremap <Space>si :YcmCompleter GoTo<CR>
+nnoremap <Space>io :YcmCompleter OrganizeImports<CR>
 nnoremap <Space>m :make<CR>
-nnoremap <Space>p :TsuGeterrProject<CR>
-nnoremap <Space>r :TsuRenameSymbol<CR>
-nnoremap <Space>ra :TsuquyomiReloadProject<CR>
-nnoremap <Space>sr :TsuReferences<CR>
+nnoremap <Space>r :YcmCompleter RefactorRename <c-r><c-w>
+nnoremap <Space>sr :YcmCompleter GoToReferences<CR>
 
 UltiSnipsAddFiletypes javascript-jasmine-arrow

@@ -105,8 +105,6 @@ Plug 'vim-scripts/indenthtml.vim', { 'for': ['html'] }
 Plug 'othree/html5.vim', { 'for': ['html'] }
 "   TypeScript
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
-Plug 'Quramy/tsuquyomi', { 'for': ['typescript'] }
-  \ | Plug 'Shougo/vimproc.vim', { 'for': 'typescript', 'do': 'make' }
 "   Other Languages
 Plug 'rhysd/vim-gfm-syntax'
 Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass', 'scss'] }

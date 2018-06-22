@@ -96,6 +96,9 @@ Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'tpope/vim-projectionist', { 'for': 'clojure' }
 Plug 'tpope/vim-salve', { 'for': 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
+"   CSS
+Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass', 'scss'] }
+Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'less'] }
 "   JavaScript
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'othree/javascript-libraries-syntax.vim'
@@ -105,16 +108,13 @@ Plug 'vim-scripts/indenthtml.vim', { 'for': ['html'] }
 Plug 'othree/html5.vim', { 'for': ['html'] }
 "   TypeScript
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
-"   Other Languages
-Plug 'rhysd/vim-gfm-syntax'
-Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass', 'scss'] }
+" Misc
+Plug 'dansomething/vim-hackernews', { 'on': 'HackerNews' }
 Plug 'fatih/vim-go', { 'for': ['go'] }
-Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'less', 'scss'] }
+Plug 'rhysd/vim-gfm-syntax'
 Plug 'samsonw/vim-task', { 'for': 'task' }
 Plug 'tfnico/vim-gradle', { 'for': 'groovy' }
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
-" Misc
-Plug 'dansomething/vim-hackernews', { 'on': 'HackerNews' }
 
 " Add plugins to &runtimepath
 call plug#end()

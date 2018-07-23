@@ -127,6 +127,9 @@ set matchtime=2 " How many tenths of a second to blink
 set list
 " Ignore whitespace changes in vimdiff
 set diffopt+=iwhite
+" Disable autocomplete scratch buffer
+set completeopt-=preview
+set completeopt+=longest
 
 " Show trailing spaces as dots and carrots for extended lines.
 " From Janus, http://git.io/PLbAlw

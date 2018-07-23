@@ -16,7 +16,3 @@ let g:EclimDefaultFileOpenAction = 'vsplit'
 let g:EclimShowQuickfixSigns = 1
 let g:EclimValidateSortResults = 'severity'
 " See .ftplugin/java.vim for mappings
-
-" Disable autocmoplete scratch buffer
-set completeopt-=preview
-set completeopt+=longest

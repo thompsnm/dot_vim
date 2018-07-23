@@ -109,6 +109,7 @@ Plug 'othree/html5.vim', { 'for': ['html'] }
 "   TypeScript
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 " Misc
+Plug 'janko-m/vim-test'
 Plug 'dansomething/vim-hackernews', { 'on': 'HackerNews' }
 Plug 'fatih/vim-go', { 'for': ['go'] }
 Plug 'rhysd/vim-gfm-syntax'

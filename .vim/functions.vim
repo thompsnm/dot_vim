@@ -104,32 +104,6 @@ endfunction
 nnoremap <silent>yl :call YankLineWithoutNewline()<CR>
 
 " ---------------
-" Run the current file as a Maven test
-" ---------------
-"TODO Check for pom.xml or build.gradle and then run the correct command in one function
-function! MavenTest()
-  " Inserts the current file name for the test
-  :Mvn test -Dtest=%:t:r -DfailIfNoTests=true -Dsurefire.argLine="$JAVA_OPTS"
-endfunction
-command! MavenTest call MavenTest()
-nnoremap <silent> xt :MavenTest<CR>
-
-function! MavenIntegrationTest()
-  :Mvn integration-test -Dit.test=%:t:r -DfailIfNoTests=true -Dskip.unit.tests=true -Dfailsafe.argLine="$JAVA_OPTS"
-endfunction
-command! MavenIntegrationTest call MavenIntegrationTest()
-nnoremap <silent> xit :MavenIntegrationTest<CR>
-
-" ---------------
-" Run the current file as a Gradle test
-" ---------------
-function! GradleTest()
-  !gw test -Dtest.single=%:t:r -i
-endfunction
-command! GradleTest call GradleTest()
-nnoremap <silent> <leader>gt :GradleTest<CR>
-
-" ---------------
 " Disable one diff window during a three-way diff allowing you to cut out the
 " noise of a three-way diff and focus on just the changes between two versions
 " at a time. Inspired by Steve Losh's Splice

@@ -32,11 +32,11 @@ Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 " Commands
 Plug 'AndrewRadev/sideways.vim'
-Plug 'HelpClose'
+Plug 'vim-scripts/HelpClose'
 Plug 'bronson/vim-visual-star-search'
 Plug 'mileszs/ack.vim'
 Plug 'rking/ag.vim'
-Plug 'scratch.vim'
+Plug 'vim-scripts/scratch.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-fugitive'
@@ -71,7 +71,7 @@ Plug 'matthewsimo/angular-vim-snippets', { 'for': ['javascript', 'coffee'] }
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 "   HTML
-Plug 'indenthtml.vim', { 'for': ['html', 'hbs'] }
+Plug 'vim-scripts/indenthtml.vim', { 'for': ['html', 'hbs'] }
 Plug 'mustache/vim-mustache-handlebars', { 'for': ['html', 'hbs'] }
 Plug 'othree/html5.vim', { 'for': ['html', 'hbs'] }
 "   Other Languages

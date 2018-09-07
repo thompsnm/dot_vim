@@ -29,6 +29,16 @@
 
  * [MacVim](http://macvim-dev.github.io/macvim/) - I'm currenty using
  the latest stable (7.4-95) from [Homebrew](http://brew.sh) on El Capitan.
+     * Install XCode
+     * Open XCode and agree to terms
+     * [Set `xcode-select` XCode:](https://stackoverflow.com/questions/17980759/xcode-select-active-developer-directory-error/17980786#17980786)
+     ```
+     sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+     ```
+     * Install MacVim with override flag:
+     ```
+     brew install macvim --with-override-system-vim
+     ```
 
 ## Bindings
 

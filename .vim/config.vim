@@ -121,6 +121,7 @@ endif
 " ---------------
 " Visual
 " ---------------
+set cursorline
 set showmatch   " Show matching brackets.
 set matchtime=2 " How many tenths of a second to blink
 " Show invisible characters

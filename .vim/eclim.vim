@@ -15,4 +15,5 @@ let g:EclimMakeLCDWarning = 0
 let g:EclimDefaultFileOpenAction = 'vsplit'
 let g:EclimShowQuickfixSigns = 1
 let g:EclimValidateSortResults = 'severity'
+let g:EclimJavascriptValidate = 0
 " See .ftplugin/java.vim for mappings

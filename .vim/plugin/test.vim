@@ -1,3 +1,4 @@
 " https://github.com/janko-m/vim-test
 
-let test#custom_runners = {'Groovy': ['Maventest']}
+let test#strategy = "dispatch"
+let test#custom_runners = {}

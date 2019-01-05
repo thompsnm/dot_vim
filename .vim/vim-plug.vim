@@ -67,23 +67,8 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-repeat'
 Plug 'ntpeters/vim-better-whitespace'
-"    UltiSnips
-if v:version >= 704
-  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-endif
-"   YouCompleteMe
-if v:version > 703 || (v:version == 703 && has('patch584'))
-  function! BuildYCM(info)
-    " info is a dictionary with 3 fields
-    " - name:   name of the plugin
-    " - status: 'installed', 'updated', or 'unchanged'
-    " - force:  set on PlugInstall! or PlugUpdate!
-    if a:info.status == 'installed' || a:info.force
-      !./install.py --clang-completer --go-completer
-    endif
-  endfunction
-  Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
-endif
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}} | Plug 'Shougo/denite.nvim'
+Plug 'honza/vim-snippets'
 " Language Additions
 "   Clojure
 Plug 'guns/vim-clojure-highlight', { 'for': 'clojure' }

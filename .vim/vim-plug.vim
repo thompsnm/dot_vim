@@ -48,7 +48,7 @@ Plug 'mtth/scratch.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive', {'tag': '*'}
 Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/UnconditionalPaste'

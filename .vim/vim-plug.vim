@@ -67,7 +67,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-repeat'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}} | Plug 'Shougo/denite.nvim'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'honza/vim-snippets'
 " Language Additions
 "   Clojure

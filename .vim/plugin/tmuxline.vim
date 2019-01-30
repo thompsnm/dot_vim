@@ -7,6 +7,6 @@ let g:tmuxline_preset = {
     \ 'win'  : ['#I', '#W'],
     \ 'cwin' : ['#I', '#W'],
     \ 'x'    : ['%I:%M %p'],
-    \ 'y'    : '⚡️ #(battery)',
-    \ 'z'    : '#(tmux-mem-cpu-load -a0)'
+    \ 'y'    : '⚡️#(battery)',
+    \ 'z'    : '#(tmux-mem-cpu-load -a0 --interval 2 -g0)'
     \ }

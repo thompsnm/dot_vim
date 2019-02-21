@@ -20,7 +20,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-bash --no-zsh --no-fish' }
 Plug 'junegunn/fzf.vim'
-Plug 'regedarek/ZoomWin', { 'on': 'ZoomWin' }
+Plug 'dhruvasagar/vim-zoom'
 Plug 'tpope/vim-unimpaired'
 " UI Additions
 Plug 'edkolev/tmuxline.vim'

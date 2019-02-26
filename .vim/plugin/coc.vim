@@ -29,13 +29,6 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-" Use <Tab> and <S-Tab> to navigate the completion list:
-" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-" Close preview window when completion is done.
-autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
-
 " Use `[c` and `]c` for navigate diagnostics
 " nmap <silent> [c <Plug>(coc-diagnostic-prev)
 " nmap <silent> ]c <Plug>(coc-diagnostic-next)
@@ -47,7 +40,6 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K for show documentation in preview window
-" nnoremap <silent> K :call <SID>show_documentation()<CR>
 nnoremap <Space>h :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
@@ -62,7 +54,6 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
-" nmap <leader>rn <Plug>(coc-rename)
 nmap <Space>rr <Plug>(coc-rename)
 
 " Remap for format selected region
@@ -82,7 +73,6 @@ nmap <Space>rr <Plug>(coc-rename)
 " nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Remap for do codeAction of current line
-" nmap <leader>ac  <Plug>(coc-codeaction)
 nnoremap <Space>ca <Plug>(coc-codeaction)
 " Fix autofix problem of current line
 nmap <Space>qf  <Plug>(coc-fix-current)

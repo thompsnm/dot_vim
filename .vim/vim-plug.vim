@@ -54,7 +54,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/UnconditionalPaste'
 " Automatic Helpers
 Plug 'w0rp/ale'
-Plug 'iamcco/markdown-preview.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'MarcWeber/vim-addon-local-vimrc'
 Plug 'jiangmiao/auto-pairs'

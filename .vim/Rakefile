@@ -68,8 +68,8 @@ end
 def parse_plugins_from_vimrc
   plugins = []
   File.new('vim-plug.vim').each do |line|
-    if line =~ /^Plug\s+["'](.+)["']/
-      plugins << convert_to_link_hash($1)
+    line.scan(/Plug\s+["'](.+?)["']/).each do |plug|
+      plugins << convert_to_link_hash(plug.first)
     end
   end
 

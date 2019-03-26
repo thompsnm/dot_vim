@@ -16,11 +16,11 @@ call plug#begin('~/.vim/bundle')
 " ---------------
 
 " Navigation
-Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'dhruvasagar/vim-zoom'
+Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-bash --no-zsh --no-fish' }
 Plug 'junegunn/fzf.vim'
-Plug 'dhruvasagar/vim-zoom'
 Plug 'tpope/vim-unimpaired'
 " UI Additions
 Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass', 'scss'] }
@@ -41,37 +41,37 @@ Plug 'yssl/QFEnter'
 Plug 'AndrewRadev/sideways.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
-Plug 'junegunn/vim-slash'
+Plug 'Valloric/ListToggle'
 Plug 'dansomething/vim-eclim'
 Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
+Plug 'junegunn/gv.vim'
+Plug 'junegunn/vim-slash'
 Plug 'mattn/emmet-vim'
-Plug 'Valloric/ListToggle'
 Plug 'mileszs/ack.vim'
 Plug 'mtth/scratch.vim'
-Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-fugitive', {'tag': '*'}
-Plug 'junegunn/gv.vim'
+Plug 'tpope/vim-fugitive', { 'tag': '*' }
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/UnconditionalPaste'
 " Automatic Helpers
-Plug 'w0rp/ale'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'Chiel92/vim-autoformat'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'MarcWeber/vim-addon-local-vimrc'
-Plug 'jiangmiao/auto-pairs'
-Plug 'Chiel92/vim-autoformat'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'andymass/vim-matchup'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'honza/vim-snippets'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'janko-m/vim-test'
+Plug 'jiangmiao/auto-pairs'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-repeat'
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
-Plug 'honza/vim-snippets'
+Plug 'w0rp/ale'
 " Language Additions
 Plug 'sheerun/vim-polyglot'
 "   Clojure

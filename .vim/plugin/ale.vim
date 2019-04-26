@@ -1,6 +1,6 @@
 "w0rp/ale
 
-" Only use YCM for now
+" Only use COC.nvim for now
 let g:ale_completion_enabled = 0
 
 " Only validate on save

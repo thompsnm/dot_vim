@@ -16,6 +16,6 @@ let g:EclimDefaultFileOpenAction = 'vsplit'
 let g:EclimShowQuickfixSigns = 1
 let g:EclimValidateSortResults = 'severity'
 let g:EclimJavascriptValidate = 0
-" Disable Eclim logging (stop JSL missing error)
-let g:EclimLogLevel = 'off'
+let g:EclimJavascriptIndentDisabled = 1
+let g:EclimJavascriptLintEnabled = 0
 " See .ftplugin/java.vim for mappings

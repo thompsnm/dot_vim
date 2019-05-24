@@ -7,7 +7,7 @@ nnoremap <Space>h :JavaHierarchy<CR>
 nnoremap <Space>i :JavaImport<CR>
 nnoremap <Space>io :JavaImportOrganize<CR>
 nnoremap <Space>m :JavaMove<space>
-nnoremap <Space>o :execute "Dispatch! open -a Eclipse " . expand('%')<CR>
+nnoremap <Space>o :execute "Dispatch! open -a /Applications/Eclipse.app " . expand('%')<CR>
 nnoremap <Space>p :ProjectProblems!<CR>
 nnoremap <Space>pr :ProjectRefresh<CR>
 nnoremap <Space>pra :ProjectRefreshAll<CR>

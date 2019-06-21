@@ -61,6 +61,8 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'MarcWeber/vim-addon-local-vimrc'
 Plug 'andymass/vim-matchup'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'epilande/vim-es2015-snippets'
+Plug 'epilande/vim-react-snippets'
 Plug 'honza/vim-snippets'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'janko-m/vim-test'

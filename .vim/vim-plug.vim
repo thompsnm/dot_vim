@@ -72,6 +72,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-repeat'
 Plug 'w0rp/ale'
+Plug 'whiteinge/diffconflicts'
 " Language Additions
 Plug 'sheerun/vim-polyglot'
 "   Clojure

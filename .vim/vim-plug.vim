@@ -28,7 +28,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'junegunn/vim-peekaboo'
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'liuchengxu/vista.vim'
+Plug 'liuchengxu/vista.vim', { 'on':  ['Vista'] }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'mbbill/undotree'
 Plug 'mhinz/vim-signify'

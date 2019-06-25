@@ -30,7 +30,7 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'liuchengxu/vista.vim', { 'on':  ['Vista'] }
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'mbbill/undotree'
+Plug 'mbbill/undotree', { 'on':  ['UndotreeShow', 'UndotreeToggle'] }
 Plug 'mhinz/vim-signify'
 Plug 'nanotech/jellybeans.vim'
 Plug 'nathanaelkane/vim-indent-guides'

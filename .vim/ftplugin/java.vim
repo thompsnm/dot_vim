@@ -17,6 +17,7 @@ nnoremap <Space>si :JavaSearch -x implementors -a vsplit<CR>
 nnoremap <Space>sr :JavaSearch -x references -s all<CR>
 nnoremap <Space>st :JavaSearch -t type -s all -p
 nnoremap <Space>xt :JUnit %<CR>
+nnoremap <Space>xtn :TestNearest<CR>
 
 " Enable SplitJoin for Java files
 " https://github.com/AndrewRadev/splitjoin.vim/issues/33#issuecomment-44213183

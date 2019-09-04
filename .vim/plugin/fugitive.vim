@@ -1,13 +1,14 @@
 "tpope/vim-fugitive
 
 nnoremap <Leader>gb :Gblame<CR>
+" Open commit in a new tab
 nnoremap <Leader>gc :Gcommit -v<CR>
 nnoremap <Leader>gw :Gwrite<CR>
 nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gp :Git push<CR>
+nnoremap <Leader>gp :Gpush<CR>
  " Mnemonic, gu = Git Update
-nnoremap <Leader>gu :Git pull<CR>
-nnoremap <Leader>gd :Gvdiff<CR>
+nnoremap <Leader>gu :Gpull<CR>
+nnoremap <Leader>gd :Gvdiffsplit<CR>
 " Exit a diff by closing the diff window
 nnoremap <Leader>gx :wincmd h<CR>:q<CR>
 " Start git command

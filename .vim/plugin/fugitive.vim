@@ -4,7 +4,7 @@ nnoremap <Leader>gb :Gblame<CR>
 " Open commit in a new tab
 nnoremap <Leader>gc :Gcommit -v<CR>
 nnoremap <Leader>gw :Gwrite<CR>
-nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gs :25Gstatus<CR>
 nnoremap <Leader>gp :Gpush<CR>
  " Mnemonic, gu = Git Update
 nnoremap <Leader>gu :Gpull<CR>

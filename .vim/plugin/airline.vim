@@ -29,3 +29,9 @@ let g:airline_mode_map = {
 
 " Just show the file name
 let g:airline_section_c = '%t'
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+" The default ⚡️ looks too much like the battery charging symbol
+let g:airline_symbols.dirty = ' 𝛥'

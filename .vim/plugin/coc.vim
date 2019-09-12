@@ -77,16 +77,22 @@ nnoremap <Space>ca <Plug>(coc-codeaction)
 " Fix autofix problem of current line
 nmap <Space>qf  <Plug>(coc-fix-current)
 
+" Use <tab> for select selections ranges, needs server support, like: coc-tsserver, coc-python
+nmap <silent> <TAB> <Plug>(coc-range-select)
+xmap <silent> <TAB> <Plug>(coc-range-select)
+xmap <silent> <S-TAB> <Plug>(coc-range-select-backword)
+
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
 
 " Use `:Fold` to fold current buffer
 " command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
-" Add diagnostic info for https://github.com/vim-airline/vim-airline
-let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
-let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
+" use `:OR` for organize import of current buffer
+" command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
+" Add status line support, for integration with other plugin, checkout `:h coc-status`
+" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Using CocList
 " Show all diagnostics
@@ -108,4 +114,3 @@ nnoremap <silent> <space>lr  :<C-u>CocListResume<CR>
 
 " make error text highlight red
 highlight CocErrorHighlight ctermfg=Red  guifg=#ff0000
-" highlight CocWarningHighlight ctermfg=Yellow  guifg=#ffff00

@@ -57,7 +57,7 @@ Plug 'tpope/vim-fugitive', { 'tag': '*' }
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/UnconditionalPaste'
 " Automatic Helpers
-Plug 'Chiel92/vim-autoformat'
+Plug 'Chiel92/vim-autoformat', { 'on': ['Autoformat'] }
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'MarcWeber/vim-addon-local-vimrc'
 Plug 'andymass/vim-matchup'
@@ -66,8 +66,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'epilande/vim-es2015-snippets'
 Plug 'epilande/vim-react-snippets'
 Plug 'honza/vim-snippets'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
-Plug 'janko-m/vim-test'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install', 'for': 'markdown' }
+Plug 'janko-m/vim-test', { 'on': ['TestFile', 'TestNearest'] }
 Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'ntpeters/vim-better-whitespace'

@@ -45,7 +45,6 @@ Plug 'AndrewRadev/switch.vim'
 Plug 'Valloric/ListToggle'
 Plug 'dansomething/vim-eclim'
 Plug 'junegunn/gv.vim'
-Plug 'junegunn/vim-slash'
 Plug 'mattn/emmet-vim'
 Plug 'mtth/scratch.vim'
 Plug 'tommcdo/vim-lion'
@@ -56,6 +55,7 @@ Plug 'tpope/vim-fugitive', { 'tag': '*' }
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/UnconditionalPaste'
 Plug 'wincent/ferret'
+Plug 'wincent/loupe'
 " Automatic Helpers
 Plug 'Chiel92/vim-autoformat', { 'on': ['Autoformat'] }
 Plug 'ConradIrwin/vim-bracketed-paste'

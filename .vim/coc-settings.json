@@ -1,0 +1,18 @@
+{
+  "coc.source.omni.filetypes": ["java"],
+  "diagnostic.errorSign": "✗",
+  "diagnostic.infoSign": ">>",
+  "diagnostic.warningSign": "⚠",
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "snippets.extends": {
+    "typescript": ["javascript", "javascript-jasmine-arrow"],
+    "javascriptreact": ["javascript"]
+  },
+  "snippets.priority": 100,
+  "suggest.autoTrigger": "trigger",
+  "suggest.triggerCompletionWait": 60,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
+}

@@ -2,7 +2,7 @@
 
 let g:switch_mapping = "-"
 
-autocmd BufNewFile,BufRead *[Ss]pec.ts,*[Ii]ntegration.ts let g:switch_custom_definitions =
+autocmd BufNewFile,BufRead *[Ss]pec.[jt]s,*[Ii]ntegration.[jt]s let g:switch_custom_definitions =
     \ [
     \   {
     \     '^\(\s\+\)\?describe\((\)':  '\1fdescribe\2',

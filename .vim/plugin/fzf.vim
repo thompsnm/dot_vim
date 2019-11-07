@@ -20,3 +20,19 @@ nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>u :History<CR>
 nnoremap <leader>m :FZFMru<CR>
 nnoremap // :BLines<CR>
+
+nnoremap <leader>ag :Rg 
+" bind ag to grep word under cursor
+vnoremap <leader>ag "xy :Rg <C-R>x
+" bind K to grep highlighted text
+vnoremap K "xy :Rg <C-R>x<CR>
+" bind K to grep word under cursor
+nnoremap K :Rg <C-R><C-W><CR>
+
+" https://github.com/junegunn/fzf.vim#advanced-customization
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+  \   <bang>0 ? fzf#vim#with_preview('up:60%')
+  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \   <bang>0)

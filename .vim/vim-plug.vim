@@ -54,7 +54,6 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive', { 'tag': '*' }
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/UnconditionalPaste'
-Plug 'wincent/ferret'
 Plug 'wincent/loupe'
 " Automatic Helpers
 Plug 'Chiel92/vim-autoformat', { 'on': ['Autoformat'] }

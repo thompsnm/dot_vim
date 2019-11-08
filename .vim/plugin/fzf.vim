@@ -21,7 +21,10 @@ nnoremap <leader>u :History<CR>
 nnoremap <leader>m :FZFMru<CR>
 nnoremap // :BLines<CR>
 
+" bind leader ag to open a search prompt
 nnoremap <leader>ag :Rg 
+" bind leader gf to list files changed with a diff
+nnoremap <leader>gf :GFiles?<CR>
 " bind ag to grep word under cursor
 vnoremap <leader>ag "xy :Rg <C-R>x
 " bind K to grep highlighted text

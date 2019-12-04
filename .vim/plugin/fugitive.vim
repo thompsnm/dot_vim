@@ -6,6 +6,7 @@ nnoremap <Leader>gc :Gcommit -v<CR>
 nnoremap <Leader>gw :Gwrite<CR>
 nnoremap <Leader>gs :25Gstatus<CR>
 nnoremap <Leader>gp :Gpush<CR>
+nnoremap <Leader>gpf :Gpush --force-with-lease<CR>
  " Mnemonic, gu = Git Update
 nnoremap <Leader>gu :Gpull<CR>
 nnoremap <Leader>gd :Gvdiffsplit<CR>

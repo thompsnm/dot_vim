@@ -1,5 +1,7 @@
 " Unbind these keys for different bindings in vimrc
 if has('gui_macvim')
+  set guifont=Hack\ Nerd\ Font
+
   " D-t
   macmenu &File.New\ Tab key=<nop>
   " D-p

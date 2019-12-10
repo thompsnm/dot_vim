@@ -16,6 +16,7 @@ CompilerSet makeprg=mvn
 " See also
 " https://github.com/ervandew/eclim/blob/40aa7c85fc64da6beecc45691091b9c6f2c9e852/org.eclim.jdt/vim/eclim/compiler/eclim_mvn.vim
 " https://github.com/JalaiAmitahl/maven-compiler.vim/blob/master/compiler/mvn.vim
+" https://github.com/mikelue/vim-maven-plugin/blob/master/compiler/maven.vim
 
 " POM related messages
 CompilerSet errorformat=%E[ERROR]\ %#Non-parseable\ POM\ %f:\ %m\ %#\\@\ line\ %l\\,\ column\ %c%.%#,%Z,

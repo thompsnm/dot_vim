@@ -1,6 +1,7 @@
 nnoremap <Space>oe :execute "Dispatch! open -a /Applications/Eclipse.app " . expand('%')<CR>
 nnoremap <Space>io :CocCommand java.action.organizeImports
 nnoremap <Space>xt :TestNearest<CR>
+nnoremap <Space>xtd :TestNearest -Dmaven.surefire.debug<CR>
 nnoremap <Space>xtl :TestLast<CR>
 
 if (has("nvim"))

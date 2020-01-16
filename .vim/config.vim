@@ -148,6 +148,8 @@ set listchars+=extends:>
 " The character to show in the last column when wrap is off and the line
 " continues beyond the right of the screen
 set listchars+=precedes:<
+" make non-breaking spaces (\u00a0) visible
+set listchars+=nbsp:▸
 
 " ---------------
 " Sounds

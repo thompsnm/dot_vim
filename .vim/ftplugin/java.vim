@@ -1,7 +1,5 @@
 nnoremap <Space>oe :execute "Dispatch! open -a /Applications/Eclipse.app " . expand('%')<CR>
 nnoremap <Space>io :CocCommand java.action.organizeImports
-nnoremap <Space>xt :TestNearest<CR>
-nnoremap <Space>xtl :TestLast<CR>
 
 if (has("nvim"))
   let g:vebugger_breakpoint_text='⛔'

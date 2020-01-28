@@ -21,19 +21,12 @@ if has("autocmd")
           \   exe "normal! g`\"" |
           \ endif
 
-    " Fix trailing whitespace in my most used programming langauges
-    autocmd BufWritePre *.py,*.coffee,*.css,*.less,*.js,*.coffee,
-          \*.rb,*.erb,*.groovy,*.java,*.php,*.ftl silent! :StripTrailingWhiteSpace
+    autocmd BufRead,BufNewFile .jshintrc,.bowerrc,.firebaserc,.stylelintrc set filetype=json
 
-    autocmd BufRead,BufNewFile .jshintrc,.bowerrc set filetype=json
-
-    " Enable Rainbow Parentheses
-    autocmd VimEnter * RainbowParenthesesToggle
-    autocmd Syntax * RainbowParenthesesLoadRound
-    autocmd Syntax * RainbowParenthesesLoadSquare
-    autocmd Syntax * RainbowParenthesesLoadBraces
-
-    " Disable Indent Guides for Clojure files
-    autocmd BufNewFile,BufEnter *.clj,*.cljs IndentGuidesDisable
+    " https://vim.fandom.com/wiki/Automatically_fitting_a_quickfix_window_height
+    au FileType qf call AdjustWindowHeight(4, 20)
+    function! AdjustWindowHeight(minheight, maxheight)
+      exe max([min([line("$"), a:maxheight]), a:minheight]) . "wincmd _"
+    endfunction
   augroup end
 endif

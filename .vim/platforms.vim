@@ -21,9 +21,9 @@ if has('win32') || has('win64')
 elseif has('gui_macvim')
   " MacVim
 
-  " Custom Source Code font for Powerline
-  " From: https://github.com/Lokaltog/powerline-fonts
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+  " Custom Hack for Powerline
+  " From: https://github.com/powerline/fonts/tree/master/Hack
+  set guifont=Hack:h12
 
   " Hide Toolbar in MacVim
   if has("gui_running")

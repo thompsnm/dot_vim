@@ -2,6 +2,7 @@
 " vim-plug
 " ----------------------------------------
 
+" auto install vim-plug and plugins
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -16,69 +17,82 @@ call plug#begin('~/.vim/bundle')
 
 " Navigation
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'regedarek/ZoomWin', { 'on': 'ZoomWin' }
+Plug 'dhruvasagar/vim-zoom'
+Plug 'easymotion/vim-easymotion'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-bash --no-zsh --no-fish' }
+Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-unimpaired'
 " UI Additions
+Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass', 'scss'] }
 Plug 'edkolev/tmuxline.vim'
 Plug 'jszakmeister/vim-togglecursor'
+Plug 'junegunn/vim-peekaboo'
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'mbbill/undotree'
+Plug 'liuchengxu/vista.vim'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'mbbill/undotree', { 'on':  ['UndotreeShow', 'UndotreeToggle'] }
 Plug 'mhinz/vim-signify'
-Plug 'mhinz/vim-startify'
 Plug 'nanotech/jellybeans.vim'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'samsonw/vim-task', { 'for': 'task' }
 Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
+Plug 'yssl/QFEnter'
 " Commands
 Plug 'AndrewRadev/sideways.vim'
-Plug 'vim-scripts/HelpClose'
-Plug 'bronson/vim-visual-star-search'
-Plug 'mileszs/ack.vim'
-Plug 'rking/ag.vim'
-Plug 'scrooloose/nerdcommenter'
-Plug 'tpope/vim-fugitive'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'AndrewRadev/switch.vim'
+Plug 'Valloric/ListToggle'
+Plug 'junegunn/gv.vim'
+Plug 'mattn/emmet-vim'
+Plug 'mtth/scratch.vim'
+Plug 'tommcdo/vim-lion'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive', { 'tag': '*' }
 Plug 'tpope/vim-surround'
+Plug 'vim-scripts/UnconditionalPaste'
+Plug 'wincent/loupe'
 " Automatic Helpers
+Plug 'Chiel92/vim-autoformat', { 'on': ['Autoformat'] }
+Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'MarcWeber/vim-addon-local-vimrc'
-Plug 'Valloric/MatchTagAlways'
+Plug 'andymass/vim-matchup'
+Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'ervandew/supertab'
-Plug 'scrooloose/syntastic'
-"   YouCompleteMe
-if v:version > 703 || (v:version == 703 && has('patch584'))
-  function! BuildYCM(info)
-    " info is a dictionary with 3 fields
-    " - name:   name of the plugin
-    " - status: 'installed', 'updated', or 'unchanged'
-    " - force:  set on PlugInstall! or PlugUpdate!
-    if a:info.status == 'installed' || a:info.force
-      !./install.py --clang-completer --gocode-completer
-    endif
-  endfunction
-  Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
-endif
+Plug 'epilande/vim-es2015-snippets'
+Plug 'epilande/vim-react-snippets'
+Plug 'honza/vim-snippets'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install', 'for': 'markdown' }
+Plug 'janko-m/vim-test', { 'on': ['TestFile', 'TestNearest'] }
+Plug 'jiangmiao/auto-pairs'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-rhubarb'
+Plug 'whiteinge/diffconflicts'
 " Language Additions
-"   JavaScript
-Plug 'elzr/vim-json', { 'for': 'json' }
-Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-"   HTML
-Plug 'vim-scripts/indenthtml.vim', { 'for': ['html', 'hbs'] }
-Plug 'mustache/vim-mustache-handlebars', { 'for': ['html', 'hbs'] }
-Plug 'othree/html5.vim', { 'for': ['html', 'hbs'] }
-"   Other Languages
-Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'sass', 'scss'] }
-Plug 'fatih/vim-go', { 'for': ['go'] }
-Plug 'gcorne/vim-sass-lint'
-Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'less', 'scss'] }
-Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
-Plug 'luishdez/vim-less', { 'for': 'less' }
-Plug 'samsonw/vim-task', { 'for': 'task' }
-Plug 'tfnico/vim-gradle', { 'for': 'groovy' }
-Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
-Plug 'tpope/vim-cucumber', { 'for': ['feature', 'story'] }
+Plug 'sheerun/vim-polyglot'
+"   Clojure
+Plug 'guns/vim-clojure-highlight', { 'for': 'clojure' }
+Plug 'guns/vim-sexp', { 'for': 'clojure' }
+Plug 'guns/vim-slamhound', { 'for': 'clojure' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plug 'tpope/vim-projectionist', { 'for': 'clojure' }
+Plug 'tpope/vim-salve', { 'for': 'clojure' }
+Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
+" Misc
+if (has("nvim"))
+  Plug 'idanarye/vim-vebugger', { 'branch': 'develop' } | Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+else
+  " Better java debugger, but it doesn't work in nvim :(
+  Plug 'https://gitlab.com/Dica-Developer/vim-jdb.git'
+endif
+Plug 'dansomething/vim-hackernews', { 'on': 'HackerNews' }
 
 " Add plugins to &runtimepath
 call plug#end()

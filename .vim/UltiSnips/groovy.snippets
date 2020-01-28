@@ -1,0 +1,82 @@
+priority -50
+
+extends java
+
+# We want to overwrite everything in parent ft.
+priority -49
+
+snippet defm "method" b
+def ${1:method}(${2}) {
+	$0
+}
+endsnippet
+
+snippet defv "variable" b
+def ${1:var} = ${2:val}
+endsnippet
+
+snippet cl "class" b
+class ${1:`!p
+snip.rv = snip.basename or "untitled"`} {
+	$0
+}
+endsnippet
+
+snippet clo "closure = { ... }" b
+def ${1:closure} = { ${2:it} ->
+	${3}
+}
+endsnippet
+
+snippet ea "each { ... }" i
+each { ${1:it} ->
+	$1${2}
+}
+endsnippet
+
+snippet eakv "each { key, value -> ... }" i
+each { ${1:key}, ${2:value} ->
+	$0
+}
+endsnippet
+
+snippet col "collect { ... }" i
+collect { ${1:it} -> ${2} }
+endsnippet
+
+snippet finda "findAll { ... }" i
+findAll { ${1:it} ->
+	${2}
+}
+endsnippet
+
+snippet forin "for in" b
+for (${1:element} in ${2:collection}) {
+	${3}
+}
+endsnippet
+
+snippet defs "Spock Spec" b
+def "${1:description}"() {
+	given:
+		$0def foo = 1
+
+	when:
+		def bar = foo
+
+	then:
+		foo == bar
+}
+endsnippet
+
+snippet defse "Spock setup" b
+def setup() {
+	$0
+}
+endsnippet
+
+snippet defcl "Spock cleanup" b
+def cleanup() {
+	$0
+}
+endsnippet

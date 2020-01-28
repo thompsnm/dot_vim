@@ -3,9 +3,6 @@ sessions
 .DS_Store
 extra.vim
 Session.vim
-.vim/autoload/
+.vim/autoload/plug.vim
 .vim/.netrwhist
-.config/configstore/
-.config/gcloud/
-.config/hub
-.config/wireshark
+.config/

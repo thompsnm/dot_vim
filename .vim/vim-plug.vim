@@ -36,9 +36,7 @@ Plug 'vim-scripts/HelpClose'
 Plug 'bronson/vim-visual-star-search'
 Plug 'mileszs/ack.vim'
 Plug 'rking/ag.vim'
-Plug 'vim-scripts/scratch.vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 " Automatic Helpers
@@ -46,10 +44,7 @@ Plug 'MarcWeber/vim-addon-local-vimrc'
 Plug 'Valloric/MatchTagAlways'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
-Plug 'rizzatti/dash.vim', { 'on': 'Dash' }
 Plug 'scrooloose/syntastic'
-Plug 'tpope/vim-obsession'
-Plug 'tpope/vim-repeat'
 "   YouCompleteMe
 if v:version > 703 || (v:version == 703 && has('patch584'))
   function! BuildYCM(info)
@@ -67,7 +62,6 @@ endif
 "   JavaScript
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-Plug 'matthewsimo/angular-vim-snippets', { 'for': ['javascript', 'coffee'] }
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 "   HTML
@@ -85,8 +79,6 @@ Plug 'samsonw/vim-task', { 'for': 'task' }
 Plug 'tfnico/vim-gradle', { 'for': 'groovy' }
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
 Plug 'tpope/vim-cucumber', { 'for': ['feature', 'story'] }
-" Misc
-Plug 'ryanss/vim-hackernews', { 'on': 'HackerNews' }
 
 " Add plugins to &runtimepath
 call plug#end()
